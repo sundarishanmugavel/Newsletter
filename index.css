@@ -614,23 +614,6 @@ body {
   color: var(--color-terracotta);
   font-weight: 700;
   text-decoration: underline;
-  display: inline-block;
-  margin-top: 4px;
-  animation: pulseZoom 2s ease-in-out infinite;
-}
-
-@keyframes pulseZoom {
-  0% {
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scale(1.08);
-  }
-
-  100% {
-    transform: scale(1);
-  }
 }
 
 /* Footer Section */
