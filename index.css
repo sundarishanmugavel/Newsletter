@@ -408,21 +408,7 @@ body {
   height: 100%;
   object-fit: contain;
   filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.4));
-  animation: timerFloatMove 3.5s ease-in-out infinite;
-}
-
-@keyframes timerFloatMove {
-  0% {
-    transform: translateY(0px) rotate(-3deg) scale(1.35);
-  }
-
-  50% {
-    transform: translateY(-4px) rotate(3deg) scale(1.42);
-  }
-
-  100% {
-    transform: translateY(0px) rotate(-3deg) scale(1.35);
-  }
+  transform: scale(1.35);
 }
 
 /* Center Content Column */
