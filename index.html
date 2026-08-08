@@ -1,195 +1,496 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="x-apple-disable-message-reformatting">
     <title>Your Jupiter Reading is Ready | Personalized Astrological Report</title>
     <meta name="description"
         content="Unlock your personalized Jupiter reading. Discover key months, sensitive dates, and remedies tailored to your birth date on file.">
-    <link rel="stylesheet" href="index.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Pinyon+Script&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style type="text/css">
+        /* Client Resets & Reset Overrides */
+        body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+        table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+        img { -ms-interpolation-mode: bicubic; border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; }
+        table { border-collapse: collapse !important; }
+        body { height: 100% !important; margin: 0 !important; padding: 0 !important; width: 100% !important; background-color: #F5F5F7; }
+        
+        /* iOS Blue Links Reset */
+        a[x-apple-data-detectors] {
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+
+        /* Hover Effects for Supported Email Clients */
+        .hero-cta-btn:hover { background-color: #8C2A06 !important; }
+        .main-action-btn:hover { background-color: #8C2A06 !important; }
+        .gold-compact-btn:hover { background-color: #FFF5EE !important; }
+        .feature-item:hover { border-color: #ECC8B5 !important; }
+
+        /* Responsive Mobile Email Overrides */
+        @media screen and (max-width: 540px) {
+            .newsletter-container {
+                width: 100% !important;
+                max-width: 100% !important;
+                border-radius: 8px !important;
+            }
+
+            .hero-section {
+                background-image: url('assets/B1.png') !important;
+                background-position: 90% center !important;
+                background-size: cover !important;
+            }
+
+            .hero-cell {
+                padding: 44px 10px 16px 10px !important;
+            }
+
+            .hero-text-content {
+                margin-left: 0 !important;
+                max-width: 62% !important;
+                margin-top: 8px !important;
+                text-align: center !important;
+            }
+
+            .greeting-text {
+                font-size: 20px !important;
+                font-weight: 700 !important;
+                text-align: center !important;
+            }
+
+            .main-heading {
+                font-size: 22px !important;
+                line-height: 1.15 !important;
+                text-align: center !important;
+            }
+
+            .ready-script {
+                font-size: 38px !important;
+            }
+
+            .birthdate-subtext {
+                font-size: 12px !important;
+                text-align: center !important;
+            }
+
+            .hero-cta-btn {
+                font-size: 11px !important;
+                padding: 7.5px 12px !important;
+                border-radius: 7px !important;
+                white-space: nowrap;
+            }
+
+            .feature-item-heading {
+                font-size: 14.5px !important;
+            }
+
+            .feature-item-desc {
+                font-size: 12.5px !important;
+            }
+
+            .unlock-banner-card-v6 {
+                border-radius: 10px !important;
+            }
+
+            .unlock-left-timer {
+                width: 50px !important;
+            }
+
+            .timer-left-image {
+                width: 50px !important;
+            }
+
+            .unlock-title-text {
+                font-size: 11px !important;
+            }
+
+            .unlock-subtext {
+                font-size: 11.5px !important;
+            }
+
+            .gold-compact-btn {
+                font-size: 10.5px !important;
+                padding: 5.5px 10px !important;
+            }
+
+            .main-action-btn {
+                font-size: 13px !important;
+                padding: 10px 16px !important;
+                border-radius: 7px !important;
+            }
+        }
+    </style>
 </head>
 
-<body>
+<body style="margin: 0; padding: 0; background-color: #F5F5F7; font-family: 'Plus Jakarta Sans', Arial, Helvetica, sans-serif; -webkit-font-smoothing: antialiased;">
 
-    <main class="newsletter-container" id="newsletter-app">
+    <!-- Outer Wrapper Table -->
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse; background-color: #F5F5F7; table-layout: fixed;">
+        <tr>
+            <td align="center" style="padding: 24px 12px;">
 
-        <!-- Hero Section -->
-        <section class="hero-section">
-            <!-- Top Urgency Pill Badge -->
-            <div class="header-badge-wrapper">
-                <div class="urgency-badge">
-                    <svg viewBox="0 0 24 24">
-                        <path
-                            d="M6 2v6h.01L10 12l-3.99 4H6v6h12v-6h-.01L14 12l3.99-4H18V2H6zm10 14.5V20H8v-3.5l4-4 4 4zM10 6L8 4h8l-2 2h-4z" />
-                    </svg>
-                    <span>ONLY 13 DAYS LEFT</span>
-                </div>
-            </div>
+                <!-- Main Newsletter Card Container (620px Width) -->
+                <table border="0" cellpadding="0" cellspacing="0" width="620" class="newsletter-container" id="newsletter-app" style="border-collapse: collapse; width: 100%; max-width: 620px; background-color: #fff2e9; border-radius: 10px; border: 1px solid #EFE2D5; overflow: hidden; box-shadow: 0 16px 40px rgba(90, 40, 15, 0.09);">
+                    
+                    <!-- Top Urgency Pill Badge Header Row -->
+                    <tr>
+                        <td align="center" style="padding: 0; background-color: #fff2e9;">
+                            <table border="0" cellpadding="0" cellspacing="0" align="center" class="urgency-badge" style="border-collapse: collapse; background-color: #B83E12; border-radius: 0 0 18px 18px; box-shadow: 0 4px 12px rgba(184, 62, 18, 0.22);">
+                                <tr>
+                                    <td align="center" style="padding: 7px 22px; color: #FFFFFF; font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 13.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; line-height: 1;">
+                                        <span style="display: inline-block; vertical-align: middle; margin-right: 6px;">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" style="display: block; fill: #FFFFFF;">
+                                                <path d="M6 2v6h.01L10 12l-3.99 4H6v6h12v-6h-.01L14 12l3.99-4H18V2H6zm10 14.5V20H8v-3.5l4-4 4 4zM10 6L8 4h8l-2 2h-4z" />
+                                            </svg>
+                                        </span>
+                                        <span style="vertical-align: middle;">ONLY 13 DAYS LEFT</span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
 
-            <div class="hero-text-content">
-                <p class="greeting-text">Dear Ravi,</p>
-                <h1 class="main-heading">Your Jupiter Reading</h1>
-                <div class="flourish-subheading">
-                    <span class="flourish-line flourish-left"></span>
-                    <span class="ready-script">is Ready!</span>
-                    <span class="flourish-line flourish-right"></span>
-                </div>
-                <p class="birthdate-subtext">Prepared from your birth date on file</p>
+                    <!-- Hero Section Table -->
+                    <tr>
+                        <td align="center" style="padding: 0;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%" class="hero-section" background="assets/image.png" style="border-collapse: collapse; background-image: url('assets/image.png'); background-position: 84% center; background-size: cover; background-repeat: no-repeat; width: 100%;">
+                                <tr>
+                                    <td class="hero-cell" align="left" style="padding: 30px 4% 20px 4%; vertical-align: middle;">
+                                        <table border="0" cellpadding="0" cellspacing="0" class="hero-text-content" style="border-collapse: collapse; max-width: 320px; margin-left: 9%; margin-top: 24px; text-align: center;">
+                                            <!-- Greeting -->
+                                            <tr>
+                                                <td align="center" style="padding-bottom: 2px;">
+                                                    <p class="greeting-text" style="font-family: 'DM Serif Display', Georgia, serif; font-size: 21px; font-weight: 400; color: #3A2014; margin: 0; line-height: 1.2;">Dear Ravi,</p>
+                                                </td>
+                                            </tr>
+                                            <!-- Main Heading -->
+                                            <tr>
+                                                <td align="center">
+                                                    <h1 class="main-heading" style="font-family: 'DM Serif Display', Georgia, serif; font-size: 32px; font-weight: 400; color: #3A2014; line-height: 1.12; letter-spacing: 0.1px; margin: 0;">Your Jupiter Reading</h1>
+                                                </td>
+                                            </tr>
+                                            <!-- Flourish Subheading -->
+                                            <tr>
+                                                <td align="center" style="padding-top: 2px; padding-bottom: 6px;">
+                                                    <table border="0" cellpadding="0" cellspacing="0" align="center" class="flourish-subheading" style="border-collapse: collapse;">
+                                                        <tr>
+                                                            <td style="padding-right: 8px; vertical-align: middle;">
+                                                                <img src="data:image/svg+xml,%3Csvg width='44' height='16' viewBox='0 0 44 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 8H30' stroke='%23B83E12' stroke-width='1.5' stroke-linecap='round'/%3E%3Cpolygon points='16,4 20,8 16,12 12,8' fill='%23D48928'/%3E%3Cpath d='M37 8C39 8 40 7 40 5C40 7 41 8 43 8C41 8 40 9 40 11C40 9 39 8 37 8Z' fill='%23B83E12'/%3E%3Ccircle cx='33' cy='8' r='1.8' fill='%23D48928'/%3E%3C/svg%3E" width="44" height="16" alt="" class="flourish-line flourish-left" style="display: block; border: 0;" />
+                                                            </td>
+                                                            <td style="vertical-align: middle;">
+                                                                <span class="ready-script" style="font-family: 'Pinyon Script', cursive; font-size: 50px; font-weight: 400; color: #B83E12; line-height: 1; letter-spacing: 0.5px; white-space: nowrap;">is Ready!</span>
+                                                            </td>
+                                                            <td style="padding-left: 8px; vertical-align: middle;">
+                                                                <img src="data:image/svg+xml,%3Csvg width='44' height='16' viewBox='0 0 44 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M44 8H14' stroke='%23B83E12' stroke-width='1.5' stroke-linecap='round'/%3E%3Cpolygon points='28,4 32,8 28,12 24,8' fill='%23D48928'/%3E%3Cpath d='M7 8C5 8 4 7 4 5C4 7 3 8 1 8C3 8 4 9 4 11C4 9 5 8 7 8Z' fill='%23B83E12'/%3E%3Ccircle cx='11' cy='8' r='1.8' fill='%23D48928'/%3E%3C/svg%3E" width="44" height="16" alt="" class="flourish-line flourish-right" style="display: block; border: 0;" />
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <!-- Birthdate Subtext -->
+                                            <tr>
+                                                <td align="center" style="padding-bottom: 14px;">
+                                                    <p class="birthdate-subtext" style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 13.5px; color: #665043; font-weight: 500; margin: 0; line-height: 1.3;">Prepared from your birth date on file</p>
+                                                </td>
+                                            </tr>
+                                            <!-- Hero CTA Button -->
+                                            <tr>
+                                                <td align="center">
+                                                    <table border="0" cellpadding="0" cellspacing="0" align="center" style="border-collapse: collapse;">
+                                                        <tr>
+                                                            <td align="center" bgcolor="#B83E12" style="border-radius: 12px; background-color: #B83E12; box-shadow: 0 6px 16px rgba(184, 62, 18, 0.28);">
+                                                                <a href="#reading" class="hero-cta-btn" id="hero-cta-button" style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 15.5px; font-weight: 700; color: #FFFFFF; text-decoration: none; padding: 11px 26px; display: inline-block; border-radius: 12px; line-height: 1.2;">
+                                                                    <span>Open My Reading</span>
+                                                                    <span class="arrow" style="display: inline-block; margin-left: 6px; font-family: Arial, sans-serif;">→</span>
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
 
-                <a href="#reading" class="hero-cta-btn" id="hero-cta-button">
-                    <span>Open My Reading</span>
-                    <span class="arrow">→</span>
-                </a>
-            </div>
-        </section>
+                    <!-- Feature Section Wrapper Row -->
+                    <tr>
+                        <td align="center" style="padding: 0 24px 20px 24px;">
+                            
+                            <!-- Main Feature List Card Table -->
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%" class="feature-card" style="border-collapse: collapse; background-color: #F9FAFC; border: 1px solid #F5E8DC; border-radius: 4px; box-shadow: 0 2px 8px rgba(184, 62, 18, 0.04);">
+                                <tr>
+                                    <td style="padding: 26px 20px;">
+                                        
+                                        <!-- Feature Card Title -->
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;">
+                                            <tr>
+                                                <td align="center" style="padding-bottom: 20px;">
+                                                    <h2 class="feature-title" style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 20px; font-weight: 700; color: #3A2014; text-align: center; margin: 0; line-height: 1.3;">
+                                                        3 things you will know in <span style="color: #B83E12; border-bottom: 2px solid #B83E12; padding-bottom: 1px;">5 minutes:</span>
+                                                    </h2>
+                                                </td>
+                                            </tr>
+                                        </table>
 
-        <!-- Main Feature List Card -->
-        <section class="feature-card">
-            <h2 class="feature-title">3 things you will know in <span>5 minutes:</span></h2>
+                                        <!-- Feature List Items -->
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%" class="feature-list" style="border-collapse: collapse;">
+                                            
+                                            <!-- Feature Item 1 -->
+                                            <tr>
+                                                <td style="padding-bottom: 12px;">
+                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="feature-item" style="border-collapse: collapse; background-color: #FFFFFF; border: 1px solid #F2E4D8; border-radius: 12px;">
+                                                        <tr>
+                                                            <td width="48" style="padding: 14px 0 14px 16px; vertical-align: middle;">
+                                                                <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; background-color: #FCECE1; border-radius: 50%; width: 48px; height: 48px;">
+                                                                    <tr>
+                                                                        <td align="center" valign="middle" class="feature-icon-box" style="width: 48px; height: 48px; text-align: center; vertical-align: middle;">
+                                                                            <svg width="24" height="24" viewBox="0 0 24 24" style="display: block; margin: 0 auto;">
+                                                                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2" fill="none" stroke="#B83E12" stroke-width="2"></rect>
+                                                                                <line x1="16" y1="2" x2="16" y2="6" stroke="#B83E12" stroke-width="2" stroke-linecap="round"></line>
+                                                                                <line x1="8" y1="2" x2="8" y2="6" stroke="#B83E12" stroke-width="2" stroke-linecap="round"></line>
+                                                                                <line x1="3" y1="10" x2="21" y2="10" stroke="#B83E12" stroke-width="2"></line>
+                                                                                <polygon points="12 12.5 13 14.5 15.2 14.8 13.6 16.3 14 18.5 12 17.4 10 18.5 10.4 16.3 8.8 14.8 11 14.5 12 12.5" fill="none" stroke="#B83E12" stroke-width="1.6"></polygon>
+                                                                            </svg>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                            <td class="feature-text-group" style="padding: 14px 16px; vertical-align: middle;">
+                                                                <h3 class="feature-item-heading" style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 15.5px; font-weight: 700; color: #2C160B; margin: 0 0 2px 0; line-height: 1.25;">Which months are best for you</h3>
+                                                                <p class="feature-item-desc" style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 13.5px; color: #665043; margin: 0; line-height: 1.3;">Major decisions, career moves, financial planning</p>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
 
-            <div class="feature-list">
-                <!-- Feature Item 1 -->
-                <article class="feature-item">
-                    <div class="feature-icon-box">
-                        <svg viewBox="0 0 24 24">
-                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-                            <line x1="16" y1="2" x2="16" y2="6"></line>
-                            <line x1="8" y1="2" x2="8" y2="6"></line>
-                            <line x1="3" y1="10" x2="21" y2="10"></line>
-                            <polygon
-                                points="12 12.5 13 14.5 15.2 14.8 13.6 16.3 14 18.5 12 17.4 10 18.5 10.4 16.3 8.8 14.8 11 14.5 12 12.5"
-                                fill="none" stroke="currentColor" stroke-width="1.6"></polygon>
-                        </svg>
-                    </div>
-                    <div class="feature-text-group">
-                        <h3 class="feature-item-heading">Which months are best for you</h3>
-                        <p class="feature-item-desc">Major decisions, career moves, financial planning</p>
-                    </div>
-                </article>
+                                            <!-- Feature Item 2 -->
+                                            <tr>
+                                                <td style="padding-bottom: 12px;">
+                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="feature-item" style="border-collapse: collapse; background-color: #FFFFFF; border: 1px solid #F2E4D8; border-radius: 12px;">
+                                                        <tr>
+                                                            <td width="48" style="padding: 14px 0 14px 16px; vertical-align: middle;">
+                                                                <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; background-color: #FCECE1; border-radius: 50%; width: 48px; height: 48px;">
+                                                                    <tr>
+                                                                        <td align="center" valign="middle" class="feature-icon-box" style="width: 48px; height: 48px; text-align: center; vertical-align: middle;">
+                                                                            <svg width="24" height="24" viewBox="0 0 24 24" style="display: block; margin: 0 auto;">
+                                                                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2" fill="none" stroke="#B83E12" stroke-width="2"></rect>
+                                                                                <line x1="16" y1="2" x2="16" y2="6" stroke="#B83E12" stroke-width="2" stroke-linecap="round"></line>
+                                                                                <line x1="8" y1="2" x2="8" y2="6" stroke="#B83E12" stroke-width="2" stroke-linecap="round"></line>
+                                                                                <line x1="3" y1="10" x2="21" y2="10" stroke="#B83E12" stroke-width="2"></line>
+                                                                                <path d="M12 13v2.5M12 17.5v.5" stroke="#B83E12" stroke-width="2.2" stroke-linecap="round"></path>
+                                                                                <path d="M10.2 12h3.6l1.2 6.5h-6z" fill="none" stroke="#B83E12" stroke-width="1.2"></path>
+                                                                            </svg>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                            <td class="feature-text-group" style="padding: 14px 16px; vertical-align: middle;">
+                                                                <h3 class="feature-item-heading" style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 15.5px; font-weight: 700; color: #2C160B; margin: 0 0 2px 0; line-height: 1.25;">Which dates need extra caution</h3>
+                                                                <p class="feature-item-desc" style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 13.5px; color: #665043; margin: 0; line-height: 1.3;">Sensitive periods to plan around</p>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
 
-                <!-- Feature Item 2 -->
-                <article class="feature-item">
-                    <div class="feature-icon-box">
-                        <svg viewBox="0 0 24 24">
-                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-                            <line x1="16" y1="2" x2="16" y2="6"></line>
-                            <line x1="8" y1="2" x2="8" y2="6"></line>
-                            <line x1="3" y1="10" x2="21" y2="10"></line>
-                            <path d="M12 13v2.5M12 17.5v.5" stroke-width="2.2" stroke-linecap="round"></path>
-                            <path d="M10.2 12h3.6l1.2 6.5h-6z" fill="none" stroke-width="1.2"></path>
-                        </svg>
-                    </div>
-                    <div class="feature-text-group">
-                        <h3 class="feature-item-heading">Which dates need extra caution</h3>
-                        <p class="feature-item-desc">Sensitive periods to plan around</p>
-                    </div>
-                </article>
+                                            <!-- Feature Item 3 -->
+                                            <tr>
+                                                <td style="padding-bottom: 4px;">
+                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="feature-item" style="border-collapse: collapse; background-color: #FFFFFF; border: 1px solid #F2E4D8; border-radius: 12px;">
+                                                        <tr>
+                                                            <td width="48" style="padding: 14px 0 14px 16px; vertical-align: middle;">
+                                                                <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; background-color: #FCECE1; border-radius: 50%; width: 48px; height: 48px;">
+                                                                    <tr>
+                                                                        <td align="center" valign="middle" class="feature-icon-box" style="width: 48px; height: 48px; text-align: center; vertical-align: middle;">
+                                                                            <svg width="24" height="24" viewBox="0 0 24 24" style="display: block; margin: 0 auto;">
+                                                                                <circle cx="12" cy="12" r="3" fill="none" stroke="#B83E12" stroke-width="2"></circle>
+                                                                                <path d="M12 2v3M12 19v3M2 12h3M19 12h3" stroke="#B83E12" stroke-width="2" stroke-linecap="round"></path>
+                                                                                <path d="M4.93 4.93l2.12 2.12M16.95 16.95l2.12 2.12M4.93 19.07l2.12-2.12M16.95 7.05l2.12-2.12" stroke="#B83E12" stroke-width="2" stroke-linecap="round"></path>
+                                                                            </svg>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                            <td class="feature-text-group" style="padding: 14px 16px; vertical-align: middle;">
+                                                                <h3 class="feature-item-heading" style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 15.5px; font-weight: 700; color: #2C160B; margin: 0 0 2px 0; line-height: 1.25;">Personal remedies for your chart</h3>
+                                                                <p class="feature-item-desc" style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 13.5px; color: #665043; margin: 0; line-height: 1.3;">Puja, gemstones, precautions specific to you</p>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
 
-                <!-- Feature Item 3 -->
-                <article class="feature-item">
-                    <div class="feature-icon-box">
-                        <svg viewBox="0 0 24 24">
-                            <circle cx="12" cy="12" r="3"></circle>
-                            <path d="M12 2v3M12 19v3M2 12h3M19 12h3"></path>
-                            <path
-                                d="M4.93 4.93l2.12 2.12M16.95 16.95l2.12 2.12M4.93 19.07l2.12-2.12M16.95 7.05l2.12-2.12">
-                            </path>
-                        </svg>
-                    </div>
-                    <div class="feature-text-group">
-                        <h3 class="feature-item-heading">Personal remedies for your chart</h3>
-                        <p class="feature-item-desc">Puja, gemstones, precautions specific to you</p>
-                    </div>
-                </article>
-            </div>
+                                        <!-- Unlock Banner Card V6 -->
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%" class="unlock-banner-card-v6" style="border-collapse: collapse; background-color: #B83E12; background-image: linear-gradient(135deg, #B83E12 0%, #8C2A06 100%); border-radius: 12px; margin-top: 16px;">
+                                            <tr>
+                                                <!-- Left: Vertically Centered Timer Image -->
+                                                <td width="80" align="center" class="unlock-left-timer" style="padding: 12px 0 12px 16px; vertical-align: middle;">
+                                                    <img src="assets/image_copy.png" alt="Timer" class="timer-left-image" width="72" style="display: block; width: 72px; height: auto; border: 0;" />
+                                                </td>
+                                                <!-- Right: Center Body Content Stack -->
+                                                <td class="unlock-body-content" style="padding: 12px 16px 12px 8px; text-align: center; vertical-align: middle;">
+                                                    <div class="unlock-title-row" style="margin-bottom: 2px;">
+                                                        <span class="unlock-title-text" style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 13px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; color: #FFE6DA;">UNLOCK YOUR READING</span>
+                                                    </div>
+                                                    <p class="unlock-subtext" style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 13.5px; line-height: 1.25; color: #FFE6DA; margin: 0 0 6px 0;">
+                                                        After 12 years, Jupiter is changing position — on <strong class="unlock-date-highlight" style="color: #FFFFFF; font-weight: 700;">2 June 2026.</strong>
+                                                    </p>
+                                                    <table border="0" cellpadding="0" cellspacing="0" align="center" class="unlock-btn-row" style="border-collapse: collapse;">
+                                                        <tr>
+                                                            <td align="center" bgcolor="#FFFFFF" style="border-radius: 6px; background-color: #FFFFFF;">
+                                                                <a href="#unlock" class="gold-compact-btn" id="unlock-reading-btn" style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 13.5px; font-weight: 700; color: #B83E12; text-decoration: none; padding: 6px 18px; display: inline-block; border-radius: 6px; line-height: 1.2;">
+                                                                    <span>Unlock Reading</span>
+                                                                    <span class="arrow" style="display: inline-block; margin-left: 4px; font-family: Arial, sans-serif;">→</span>
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
 
-            <!-- Unlock Banner Card V6 (Inside White Feature Card) -->
-            <div class="unlock-banner-card-v6">
-                <!-- Left: Vertically Centered Timer Image -->
-                <div class="unlock-left-timer">
-                    <img src="assets/image_copy.png" alt="Timer" class="timer-left-image">
-                </div>
+                                    </td>
+                                </tr>
+                            </table>
 
-                <!-- Center Content Stack -->
-                <div class="unlock-body-content">
-                    <div class="unlock-title-row">
+                        </td>
+                    </tr>
 
-                        <span class="unlock-title-text">UNLOCK YOUR READING</span>
-                    </div>
+                    <!-- Discount Offer & Primary Action Section Row -->
+                    <tr>
+                        <td align="center" style="padding: 0 24px 24px 24px;">
+                            
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%" class="offer-section" style="border-collapse: collapse;">
+                                <tr>
+                                    <td style="padding: 0;">
+                                        
+                                        <!-- Framed Offer Card -->
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%" class="offer-card-frame" style="border-collapse: collapse; background-color: #F9FAFC; border: 1.5px solid #F0D5C5; border-radius: 10px; text-align: center; position: relative;">
+                                            
+                                            <!-- Promo Pill Badge Row -->
+                                            <tr>
+                                                <td align="center" style="padding-top: 16px; padding-bottom: 4px;">
+                                                    <table border="0" cellpadding="0" cellspacing="0" align="center" class="promo-pill" style="border-collapse: collapse; background-color: #FFFFFF; border: 1.5px solid #F0D5C5; border-radius: 30px;">
+                                                        <tr>
+                                                            <td style="padding: 5px 20px; color: #B83E12; font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-weight: 700; font-size: 13.5px; white-space: nowrap; line-height: 1.2;">
+                                                                <span class="arrow-icon" style="font-size: 14px; font-weight: 800; color: #D48928; margin-right: 6px;">»</span>
+                                                                <span>FLAT 25% OFF Today Only!</span>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
 
-                    <p class="unlock-subtext">
-                        After 12 years, Jupiter is changing position — on <strong class="unlock-date-highlight">2 June
-                            2026.</strong>
-                    </p>
+                                            <!-- Main Action Button Row -->
+                                            <tr>
+                                                <td align="center" style="padding: 10px 20px 14px 20px;">
+                                                    <table border="0" cellpadding="0" cellspacing="0" align="center" style="border-collapse: collapse; width: 100%; max-width: 320px;">
+                                                        <tr>
+                                                            <td align="center" bgcolor="#B83E12" style="border-radius: 12px; background-color: #B83E12; box-shadow: 0 6px 16px rgba(184, 62, 18, 0.28);">
+                                                                <a href="#get-reading" class="main-action-btn" id="get-reading-btn" style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 17px; font-weight: 700; color: #FFFFFF; text-decoration: none; padding: 14px 28px; display: block; border-radius: 12px; line-height: 1.2;">
+                                                                    <span>Get My Reading Now</span>
+                                                                    <span style="display: inline-block; margin-left: 6px; font-family: Arial, sans-serif;">→</span>
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
 
-                    <div class="unlock-btn-row">
-                        <a href="#unlock" class="gold-compact-btn" id="unlock-reading-btn">
-                            <span>Unlock Reading</span>
-                            <span class="arrow">→</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
+                                            <!-- Guarantee Badges Bar Row -->
+                                            <tr>
+                                                <td align="center" style="padding: 0 20px 18px 20px;">
+                                                    <table border="0" cellpadding="0" cellspacing="0" align="center" class="guarantee-badges-bar" style="border-collapse: collapse;">
+                                                        <tr>
+                                                            <td align="center" style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 13px; color: #665043; line-height: 1.3;">
+                                                                <span class="badge-item" style="display: inline-block; vertical-align: middle;">
+                                                                    <svg width="15" height="15" viewBox="0 0 24 24" style="display: inline-block; vertical-align: middle; stroke: #665043; fill: none; stroke-width: 2; margin-right: 4px;">
+                                                                        <circle cx="12" cy="12" r="9"></circle>
+                                                                        <polyline points="12 7 12 12 15 15"></polyline>
+                                                                    </svg>
+                                                                    <span style="vertical-align: middle;">Delivered in 72 hours</span>
+                                                                </span>
+                                                                <span class="badge-divider" style="display: inline-block; margin: 0 8px; color: #8A7264; opacity: 0.6;">•</span>
+                                                                <span class="badge-item" style="display: inline-block; vertical-align: middle;">
+                                                                    <svg width="15" height="15" viewBox="0 0 24 24" style="display: inline-block; vertical-align: middle; stroke: #665043; fill: none; stroke-width: 2; margin-right: 4px;">
+                                                                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                                                        <polyline points="14 2 14 8 20 8"></polyline>
+                                                                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                                                                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                                                                        <polyline points="10 9 9 9 8 9"></polyline>
+                                                                    </svg>
+                                                                    <span style="vertical-align: middle;">PDF on email</span>
+                                                                </span>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
 
-        <!-- Discount Offer & Primary Action (Card Framed matching Image 2) -->
-        <section class="offer-section">
-            <div class="offer-card-frame">
-                <div class="promo-pill">
-                    <span class="arrow-icon">»</span>
-                    <span>FLAT 25% OFF Today Only!</span>
-                </div>
+                                    </td>
+                                </tr>
 
-                <div class="main-action-btn-wrapper">
-                    <a href="#get-reading" class="main-action-btn" id="get-reading-btn">
-                        <span>Get My Reading Now</span>
-                        <span>→</span>
-                    </a>
-                </div>
+                                <!-- P.S. Box Row -->
+                                <tr>
+                                    <td align="center" style="padding-top: 16px; padding-bottom: 8px;">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%" class="ps-box" style="border-collapse: collapse;">
+                                            <tr>
+                                                <td align="center" style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 13.5px; color: #2C160B; line-height: 1.5; text-align: center;">
+                                                    <p style="margin: 0;">
+                                                        <strong>P.S.</strong> Only 10 days left before Jupiter changes position.<br>
+                                                        <a href="#open-here" id="ps-reading-link" style="color: #B83E12; font-weight: 700; text-decoration: underline;">Open your reading here</a>
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
 
-                <div class="guarantee-badges-bar">
-                    <span class="badge-item">
-                        <svg viewBox="0 0 24 24">
-                            <circle cx="12" cy="12" r="9"></circle>
-                            <polyline points="12 7 12 12 15 15"></polyline>
-                        </svg>
-                        <span>Delivered in 72 hours</span>
-                    </span>
-                    <span class="badge-divider">•</span>
-                    <span class="badge-item">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                            <polyline points="14 2 14 8 20 8"></polyline>
-                            <line x1="16" y1="13" x2="8" y2="13"></line>
-                            <line x1="16" y1="17" x2="8" y2="17"></line>
-                            <polyline points="10 9 9 9 8 9"></polyline>
-                        </svg>
-                        <span>PDF on email</span>
-                    </span>
+                            </table>
 
-                </div>
-            </div>
+                        </td>
+                    </tr>
 
-            <div class="ps-box">
-                <p><strong>P.S.</strong> Only 10 days left before Jupiter changes position.<br>
-                    <a href="#open-here" id="ps-reading-link">Open your reading here</a>
-                </p>
-            </div>
-        </section>
+                    <!-- Footer Section Row -->
+                    <tr>
+                        <td align="center" class="newsletter-footer" style="padding: 18px 24px 24px 24px; border-top: 1px solid #E8DDD2; background-color: #fff2e9;">
+                            <table border="0" cellpadding="0" cellspacing="0" align="center" class="footer-nav" style="border-collapse: collapse;">
+                                <tr>
+                                    <td align="center" style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 12px; color: #8A7264; text-align: center; line-height: 1.4;">
+                                        <span style="display: inline-block;">© 2026 Astroved.com</span>
+                                        <span class="footer-divider" style="display: inline-block; margin: 0 8px; opacity: 0.5;">|</span>
+                                        <span style="display: inline-block;">Astroved.com Pvt Ltd</span>
+                                        <span class="footer-divider" style="display: inline-block; margin: 0 8px; opacity: 0.5;">|</span>
+                                        <a href="#unsubscribe" class="underline" id="unsubscribe-link" style="color: #8A7264; text-decoration: underline; display: inline-block;">Unsubscribe</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
 
-        <!-- Footer Nav -->
-        <footer class="newsletter-footer">
-            <nav class="footer-nav">
-                <span>© 2026 Astroved.com</span>
-                <span class="footer-divider">|</span>
-                <span>Astroved.com Pvt Ltd</span>
-                <span class="footer-divider">|</span>
-                <a href="#unsubscribe" class="underline" id="unsubscribe-link">Unsubscribe</a>
-            </nav>
-        </footer>
+                </table>
 
-    </main>
+            </td>
+        </tr>
+    </table>
 
 </body>
 
