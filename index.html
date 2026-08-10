@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="x-apple-disable-message-reformatting">
-    <meta name="color-scheme" content="light dark">
-    <meta name="supported-color-schemes" content="light dark">
+    <meta name="color-scheme" content="light">
+    <meta name="supported-color-schemes" content="light">
     <title>Your Jupiter Reading is Ready | Personalized Astrological Report</title>
     <meta name="description"
         content="Unlock your personalized Jupiter reading. Discover key months, sensitive dates, and remedies tailored to your birth date on file.">
@@ -21,6 +21,12 @@
         rel="stylesheet">
 
     <style type="text/css">
+        /* Declare Light Color Scheme Default for Email Clients */
+        :root {
+            color-scheme: light;
+            supported-color-schemes: light;
+        }
+
         /* Client Resets & Reset Overrides */
         body,
         table,
@@ -97,74 +103,83 @@
                 border-left: 0 !important;
                 border-right: 0 !important;
                 padding: 0 0 16px 0 !important;
+                table-layout: fixed !important;
+                overflow: hidden !important;
             }
 
-            .hero-section {
-                background-image: url('https://res.cloudinary.com/q5yzo8na/image/upload/w_600,h_270,c_fill,q_auto,f_auto/naga_dosha_high_resolution_2288x1032_nxpnqv.png') !important;
-                background-position: 92% 30% !important;
-                background-size: cover !important;
+            .hero-bg-img {
+                width: 100% !important;
+                height: auto !important;
             }
 
+            .hero-section,
             .hero-cell {
-                padding: 16px 6px 12px 6px !important;
+                padding: 14px 12px 20px 12px !important;
+                text-align: center !important;
+                width: 100% !important;
+                box-sizing: border-box !important;
             }
 
             .hero-text-content {
-                margin-left: 42px !important;
-                max-width: 50% !important;
+                margin: 0 auto !important;
+                max-width: 100% !important;
+                width: 100% !important;
                 margin-top: 0 !important;
                 text-align: center !important;
             }
 
             .greeting-text {
-                font-size: 15px !important;
-                font-weight: 700 !important;
+                font-size: 19px !important;
+                font-weight: 500 !important;
                 color: #3A2014 !important;
                 font-family: 'DM Serif Display', Georgia, 'Times New Roman', serif !important;
                 text-align: center !important;
             }
 
             .main-heading {
-                font-size: 14.5px !important;
-                line-height: 1.15 !important;
+                font-size: 25px !important;
+                line-height: 1.18 !important;
                 color: #3A2014 !important;
                 font-family: 'DM Serif Display', Georgia, 'Times New Roman', serif !important;
-                white-space: nowrap !important;
                 text-align: center !important;
+                word-break: break-word !important;
             }
 
             .ready-script {
-                font-size: 26px !important;
+                font-size: 38px !important;
                 color: #B83E12 !important;
                 font-family: 'Pinyon Script', Georgia, 'Times New Roman', cursive !important;
             }
 
             .birthdate-subtext {
-                font-size: 9.5px !important;
+                font-size: 12.5px !important;
                 color: #5C4334 !important;
                 font-family: 'Plus Jakarta Sans', Arial, sans-serif !important;
-                margin-bottom: 2px !important;
+                margin-bottom: 4px !important;
                 text-align: center !important;
             }
 
             .hero-btn-table {
-                margin-left: 18px !important;
-                margin-top: -6px !important;
+                margin: 0 auto !important;
             }
 
             .hero-cta-btn {
-                font-size: 10px !important;
-                padding: 6px 11px !important;
-                border-radius: 6px !important;
+                font-size: 14px !important;
+                padding: 11px 24px !important;
+                border-radius: 10px !important;
                 white-space: nowrap;
             }
 
             .feature-card-wrapper {
-                padding: 0 6px 16px 6px !important;
+                padding: 0 12px 16px 12px !important;
+            }
+
+            .offer-section-cell {
+                padding: 0 12px 18px 12px !important;
             }
 
             .feature-card-inner {
-                padding: 16px 10px !important;
+                padding: 12px 10px !important;
             }
 
             .feature-title {
@@ -185,25 +200,34 @@
             }
 
             .unlock-left-timer {
-                width: 90px !important;
+                width: 65px !important;
+                padding: 8px 0 8px 8px !important;
             }
 
             .timer-left-image {
-                width: 88px !important;
-                max-width: none !important;
+                width: 60px !important;
+                max-width: 60px !important;
+            }
+
+            .unlock-body-content {
+                padding: 8px 10px 8px 4px !important;
+                text-align: center !important;
             }
 
             .unlock-title-text {
-                font-size: 10.5px !important;
+                font-size: 11px !important;
+                white-space: nowrap !important;
             }
 
             .unlock-subtext {
-                font-size: 11px !important;
+                font-size: 11.5px !important;
+                line-height: 1.25 !important;
             }
 
             .gold-compact-btn {
-                font-size: 10px !important;
-                padding: 5px 9px !important;
+                font-size: 11px !important;
+                padding: 5px 12px !important;
+                white-space: nowrap !important;
             }
 
             .main-action-btn {
@@ -216,133 +240,528 @@
                 padding: 3px 8px !important;
                 font-size: 10px !important;
             }
+
+            .guarantee-badges-cell {
+                font-size: 11px !important;
+                white-space: nowrap !important;
+            }
+
+            .guarantee-badges-cell svg {
+                width: 13px !important;
+                height: 13px !important;
+            }
+
+            .badge-divider {
+                margin: 0 4px !important;
+            }
+
+            .newsletter-footer {
+                padding: 16px 14px 20px 14px !important;
+            }
         }
 
-        /* Medium Mobile Screen Overrides (400px - 540px Viewports, e.g. 425px) */
+        /* Medium Mobile Screen Overrides (400px - 540px Viewports) */
         @media screen and (min-width: 400px) and (max-width: 540px) {
             .hero-text-content {
-                margin-left: 62px !important;
-                max-width: 52% !important;
+                margin: 0 auto !important;
+                max-width: 100% !important;
             }
 
             .hero-btn-table {
-                margin-left: 32px !important;
+                margin: 0 auto !important;
             }
         }
 
         /* Narrow Mobile Screen Overrides (320px Viewports Only) */
         @media screen and (max-width: 340px) {
             .hero-cell {
-                padding-top: 12px !important;
-                padding-left: 6px !important;
+                padding: 20px 12px 16px 12px !important;
             }
 
             .hero-text-content {
-                margin-left: 32px !important;
-                max-width: 54% !important;
-                margin-top: -4px !important;
+                margin: 0 auto !important;
+                max-width: 100% !important;
             }
 
             .main-heading {
-                font-size: 13.5px !important;
-                white-space: nowrap !important;
+                font-size: 22px !important;
             }
 
             .hero-btn-table {
-                margin-left: 16px !important;
-                margin-top: -6px !important;
+                margin: 0 auto !important;
             }
         }
 
-        /* Dark Mode Color Scheme & Text Visibility Overrides */
+        /* ----------------------------------------------------
+           DARK MODE COLOR PRESERVATION OVERRIDES
+           Enforce original light-mode color palette in dark mode.
+           Prevent automatic color inversion by email clients.
+           ---------------------------------------------------- */
         @media (prefers-color-scheme: dark) {
 
-            /* 1. Only 13 Days Left Badge - 100% width in dark mode */
-            .urgency-badge {
-                width: 100% !important;
-                max-width: 100% !important;
-                border-radius: 0 !important;
+            body,
+            .body {
+                background-color: #F5F5F7 !important;
+                background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1" height="1"><rect width="1" height="1" fill="%23F5F5F7"/></svg>') !important;
+                color: #2C160B !important;
+                -webkit-text-fill-color: #2C160B !important;
+                color-scheme: light !important;
             }
 
+            .outer-wrapper-td {
+                background-color: #F5F5F7 !important;
+                background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1" height="1"><rect width="1" height="1" fill="%23F5F5F7"/></svg>') !important;
+            }
+
+            /* MAIN NEWSLETTER */
+            .newsletter-container {
+                background-color: #fff2e9 !important;
+                background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1" height="1"><rect width="1" height="1" fill="%23fff2e9"/></svg>') !important;
+                border-color: #EFE2D5 !important;
+                color: #2C160B !important;
+                color-scheme: light !important;
+            }
+
+            .urgency-header-cell {
+                background-color: #fff2e9 !important;
+                background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1" height="1"><rect width="1" height="1" fill="%23fff2e9"/></svg>') !important;
+            }
+
+            .urgency-badge,
             .urgency-badge-cell {
-                width: 100% !important;
-                text-align: center !important;
-                border-radius: 0 !important;
+                background-color: #B83E12 !important;
+                background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1" height="1"><rect width="1" height="1" fill="%23B83E12"/></svg>') !important;
+                color: #FFFFFF !important;
+                -webkit-text-fill-color: #FFFFFF !important;
+                border-radius: 0 0 18px 18px !important;
             }
 
-            /* 2. Unlock Banner Card Words Visibility Fix in Dark Mode */
+            /* HERO SECTION */
+            .hero-section {
+                background-color: #fff2e9 !important;
+                background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1" height="1"><rect width="1" height="1" fill="%23fff2e9"/></svg>') !important;
+                color-scheme: light !important;
+            }
+
+            .greeting-text,
+            .main-heading {
+                color: #3A2014 !important;
+                -webkit-text-fill-color: #3A2014 !important;
+            }
+
+            .ready-script,
+            .flourish-subheading {
+                color: #B83E12 !important;
+                -webkit-text-fill-color: #B83E12 !important;
+            }
+
+            .birthdate-subtext {
+                color: #665043 !important;
+                -webkit-text-fill-color: #665043 !important;
+            }
+
+            .hero-cta-btn {
+                background-color: #B83E12 !important;
+                background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1" height="1"><rect width="1" height="1" fill="%23B83E12"/></svg>') !important;
+                color: #FFFFFF !important;
+                -webkit-text-fill-color: #FFFFFF !important;
+            }
+
+            /* FEATURE SECTION */
+            .feature-card-wrapper {
+                background-color: #fff2e9 !important;
+                background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1" height="1"><rect width="1" height="1" fill="%23fff2e9"/></svg>') !important;
+            }
+
+            .feature-card,
+            .feature-card-inner {
+                background-color: #F9FAFC !important;
+                background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1" height="1"><rect width="1" height="1" fill="%23F9FAFC"/></svg>') !important;
+                border-color: #F5E8DC !important;
+                color-scheme: light !important;
+            }
+
+            .feature-title {
+                color: #3A2014 !important;
+                -webkit-text-fill-color: #3A2014 !important;
+            }
+
+            .feature-title-highlight {
+                color: #B83E12 !important;
+                -webkit-text-fill-color: #B83E12 !important;
+                border-bottom-color: #B83E12 !important;
+            }
+
+            .feature-item {
+                background-color: #FFFFFF !important;
+                background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1" height="1"><rect width="1" height="1" fill="%23FFFFFF"/></svg>') !important;
+                border-color: #F2E4D8 !important;
+                color-scheme: light !important;
+            }
+
+            .feature-item-heading {
+                color: #2C160B !important;
+                -webkit-text-fill-color: #2C160B !important;
+            }
+
+            .feature-item-desc {
+                color: #665043 !important;
+                -webkit-text-fill-color: #665043 !important;
+            }
+
+            .feature-icon-circle,
+            .feature-icon-box {
+                background-color: #FCECE1 !important;
+                background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><circle cx="24" cy="24" r="24" fill="%23FCECE1"/></svg>') !important;
+            }
+
+            /* UNLOCK BANNER */
             .unlock-banner-card-v6 {
-                background-color: #7A2404 !important;
-                background-image: none !important;
+                background-color: #B83E12 !important;
+                background-image: linear-gradient(135deg, #B83E12 0%, #8C2A06 100%) !important;
+                color-scheme: light !important;
             }
 
-            .unlock-title-text {
-                color: #FFFFFF !important;
-                -webkit-text-fill-color: #FFFFFF !important;
-            }
-
-            .unlock-subtext {
-                color: #FFFFFF !important;
-                -webkit-text-fill-color: #FFFFFF !important;
-            }
-
+            .unlock-title-text,
+            .unlock-subtext,
             .unlock-date-highlight {
-                color: #FFE0D0 !important;
-                -webkit-text-fill-color: #FFE0D0 !important;
+                color: #FFFFFF !important;
+                -webkit-text-fill-color: #FFFFFF !important;
             }
 
             .gold-compact-btn {
                 background-color: #FFFFFF !important;
-                color: #7A2404 !important;
-                -webkit-text-fill-color: #7A2404 !important;
+                background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1" height="1"><rect width="1" height="1" fill="%23FFFFFF"/></svg>') !important;
+                color: #B83E12 !important;
+                -webkit-text-fill-color: #B83E12 !important;
+            }
+
+            /* OFFER CARD */
+            .offer-section-cell {
+                background-color: #fff2e9 !important;
+                background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1" height="1"><rect width="1" height="1" fill="%23fff2e9"/></svg>') !important;
+            }
+
+            .offer-card-frame {
+                background-color: #F9FAFC !important;
+                background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1" height="1"><rect width="1" height="1" fill="%23F9FAFC"/></svg>') !important;
+                border-color: #F0D5C5 !important;
+                color-scheme: light !important;
+            }
+
+            .promo-pill {
+                background-color: #FFFFFF !important;
+                background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1" height="1"><rect width="1" height="1" fill="%23FFFFFF"/></svg>') !important;
+                border-color: #F0D5C5 !important;
+                color-scheme: light !important;
+            }
+
+            .promo-pill-cell {
+                color: #B83E12 !important;
+                -webkit-text-fill-color: #B83E12 !important;
+            }
+
+            .main-action-btn-cell,
+            .main-action-btn {
+                background-color: #B83E12 !important;
+                background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1" height="1"><rect width="1" height="1" fill="%23B83E12"/></svg>') !important;
+                color: #FFFFFF !important;
+                -webkit-text-fill-color: #FFFFFF !important;
+            }
+
+            /* GUARANTEE */
+            .guarantee-badges-cell,
+            .badge-item,
+            .guarantee-badges-bar {
+                color: #665043 !important;
+                -webkit-text-fill-color: #665043 !important;
+            }
+
+            /* P.S. */
+            .ps-box,
+            .ps-box-cell,
+            .ps-box p {
+                background-color: #fff2e9 !important;
+                color: #2C160B !important;
+                -webkit-text-fill-color: #2C160B !important;
+                color-scheme: light !important;
+            }
+
+            #ps-reading-link,
+            .ps-box a {
+                color: #B83E12 !important;
+                -webkit-text-fill-color: #B83E12 !important;
+            }
+
+            /* FOOTER */
+            .newsletter-footer {
+                background-color: #fff2e9 !important;
+                background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1" height="1"><rect width="1" height="1" fill="%23fff2e9"/></svg>') !important;
+                border-top-color: #E8DDD2 !important;
+                color-scheme: light !important;
+            }
+
+            .footer-nav-cell,
+            .newsletter-footer a,
+            .footer-nav,
+            #unsubscribe-link {
+                color: #8A7264 !important;
+                -webkit-text-fill-color: #8A7264 !important;
             }
         }
 
-        /* Outlook Dark Mode [data-ogsc] Targets */
-        [data-ogsc] .urgency-badge {
-            width: 100% !important;
-            max-width: 100% !important;
-            border-radius: 0 !important;
+        /* ----------------------------------------------------
+           OUTLOOK DARK MODE [data-ogsc] & [data-ogsb] OVERRIDES
+           ---------------------------------------------------- */
+        [data-ogsc] body,
+        [data-ogsb] body,
+        [data-ogsb] .outer-wrapper-td {
+            background-color: #F5F5F7 !important;
+            color: #2C160B !important;
         }
 
-        [data-ogsc] .urgency-badge-cell {
-            width: 100% !important;
-            text-align: center !important;
+        [data-ogsc] .newsletter-container,
+        [data-ogsb] .newsletter-container,
+        [data-ogsc] .hero-section,
+        [data-ogsb] .hero-section,
+        [data-ogsc] .feature-card-wrapper,
+        [data-ogsb] .feature-card-wrapper,
+        [data-ogsc] .offer-section-cell,
+        [data-ogsb] .offer-section-cell,
+        [data-ogsc] .newsletter-footer,
+        [data-ogsb] .newsletter-footer {
+            background-color: #fff2e9 !important;
+        }
+
+        [data-ogsc] .greeting-text,
+        [data-ogsc] .main-heading {
+            color: #3A2014 !important;
+            -webkit-text-fill-color: #3A2014 !important;
+        }
+
+        [data-ogsc] .ready-script,
+        [data-ogsc] .feature-title-highlight,
+        [data-ogsc] .gold-compact-btn,
+        [data-ogsc] .promo-pill-cell,
+        [data-ogsc] #ps-reading-link {
+            color: #B83E12 !important;
+            -webkit-text-fill-color: #B83E12 !important;
+        }
+
+        [data-ogsc] .birthdate-subtext {
+            color: #665043 !important;
+            -webkit-text-fill-color: #665043 !important;
+        }
+
+        [data-ogsc] .hero-cta-btn,
+        [data-ogsc] .main-action-btn {
+            background-color: #B83E12 !important;
+            color: #FFFFFF !important;
+            -webkit-text-fill-color: #FFFFFF !important;
+        }
+
+        [data-ogsc] .feature-card,
+        [data-ogsc] .offer-card-frame {
+            background-color: #F9FAFC !important;
+            border-color: #F5E8DC !important;
+        }
+
+        [data-ogsc] .feature-title {
+            color: #3A2014 !important;
+            -webkit-text-fill-color: #3A2014 !important;
+        }
+
+        [data-ogsc] .feature-item {
+            background-color: #FFFFFF !important;
+            border-color: #F2E4D8 !important;
+        }
+
+        [data-ogsc] .feature-item-heading,
+        [data-ogsc] .ps-box-cell {
+            color: #2C160B !important;
+            -webkit-text-fill-color: #2C160B !important;
+        }
+
+        [data-ogsc] .feature-item-desc,
+        [data-ogsc] .guarantee-badges-cell {
+            color: #665043 !important;
+            -webkit-text-fill-color: #665043 !important;
+        }
+
+        [data-ogsc] .feature-icon-box,
+        [data-ogsc] .feature-icon-circle {
+            background-color: #FCECE1 !important;
         }
 
         [data-ogsc] .unlock-banner-card-v6 {
-            background-color: #7A2404 !important;
+            background-color: #B83E12 !important;
+            background-image: linear-gradient(135deg, #B83E12 0%, #8C2A06 100%) !important;
         }
 
         [data-ogsc] .unlock-title-text,
-        [data-ogsc] .unlock-subtext {
+        [data-ogsc] .unlock-subtext,
+        [data-ogsc] .unlock-date-highlight {
             color: #FFFFFF !important;
+            -webkit-text-fill-color: #FFFFFF !important;
+        }
+
+        [data-ogsc] .gold-compact-btn,
+        [data-ogsc] .promo-pill {
+            background-color: #FFFFFF !important;
+            border-color: #F0D5C5 !important;
+        }
+
+        [data-ogsc] .guarantee-badges-bar {
+            color: #665043 !important;
+            -webkit-text-fill-color: #665043 !important;
+        }
+
+        [data-ogsc] .ps-box,
+        [data-ogsc] .ps-box p {
+            color: #2C160B !important;
+            -webkit-text-fill-color: #2C160B !important;
+        }
+
+        [data-ogsc] .ps-box a {
+            color: #B83E12 !important;
+            -webkit-text-fill-color: #B83E12 !important;
+        }
+
+        [data-ogsc] .newsletter-footer {
+            background-color: #fff2e9 !important;
+            border-top-color: #E8DDD2 !important;
+        }
+
+        [data-ogsc] .newsletter-footer a,
+        [data-ogsc] .footer-nav,
+        [data-ogsc] #unsubscribe-link {
+            color: #8A7264 !important;
+            -webkit-text-fill-color: #8A7264 !important;
+        }
+
+        /* ----------------------------------------------------
+           GMAIL ANDROID UNTOUCHABLE CLASS PRESERVATION HACKS
+           ---------------------------------------------------- */
+        u + .body .newsletter-container,
+        div > u + .body .newsletter-container,
+        u + .body .urgency-header-cell,
+        div > u + .body .urgency-header-cell,
+        u + .body .hero-section,
+        div > u + .body .hero-section,
+        u + .body .feature-card-wrapper,
+        div > u + .body .feature-card-wrapper,
+        u + .body .offer-section-cell,
+        div > u + .body .offer-section-cell,
+        u + .body .newsletter-footer,
+        div > u + .body .newsletter-footer {
+            background-color: #fff2e9 !important;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1" height="1"><rect width="1" height="1" fill="%23fff2e9"/></svg>') !important;
+        }
+
+        u + .body .feature-card,
+        div > u + .body .feature-card,
+        u + .body .offer-card-frame,
+        div > u + .body .offer-card-frame {
+            background-color: #F9FAFC !important;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1" height="1"><rect width="1" height="1" fill="%23F9FAFC"/></svg>') !important;
+        }
+
+        u + .body .feature-item,
+        div > u + .body .feature-item,
+        u + .body .promo-pill,
+        div > u + .body .promo-pill,
+        u + .body .gold-compact-btn,
+        div > u + .body .gold-compact-btn {
+            background-color: #FFFFFF !important;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1" height="1"><rect width="1" height="1" fill="%23FFFFFF"/></svg>') !important;
+        }
+
+        u + .body .feature-icon-circle,
+        div > u + .body .feature-icon-circle {
+            background-color: #FCECE1 !important;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><circle cx="24" cy="24" r="24" fill="%23FCECE1"/></svg>') !important;
+        }
+
+        u + .body .greeting-text,
+        div > u + .body .greeting-text,
+        u + .body .main-heading,
+        div > u + .body .main-heading,
+        u + .body .feature-title,
+        div > u + .body .feature-title {
+            color: #3A2014 !important;
+            -webkit-text-fill-color: #3A2014 !important;
+        }
+
+        u + .body .ready-script,
+        div > u + .body .ready-script,
+        u + .body .feature-title-highlight,
+        div > u + .body .feature-title-highlight,
+        u + .body .promo-pill-cell,
+        div > u + .body .promo-pill-cell,
+        u + .body #ps-reading-link,
+        div > u + .body #ps-reading-link {
+            color: #B83E12 !important;
+            -webkit-text-fill-color: #B83E12 !important;
+        }
+
+        u + .body .feature-item-heading,
+        div > u + .body .feature-item-heading,
+        u + .body .ps-box-cell,
+        div > u + .body .ps-box-cell {
+            color: #2C160B !important;
+            -webkit-text-fill-color: #2C160B !important;
+        }
+
+        u + .body .birthdate-subtext,
+        div > u + .body .birthdate-subtext,
+        u + .body .feature-item-desc,
+        div > u + .body .feature-item-desc,
+        u + .body .guarantee-badges-cell,
+        div > u + .body .guarantee-badges-cell {
+            color: #665043 !important;
+            -webkit-text-fill-color: #665043 !important;
+        }
+
+        u + .body .footer-nav-cell,
+        div > u + .body .footer-nav-cell,
+        u + .body #unsubscribe-link,
+        div > u + .body #unsubscribe-link {
+            color: #8A7264 !important;
+            -webkit-text-fill-color: #8A7264 !important;
         }
     </style>
 </head>
 
-<body
-    style="margin: 0; padding: 0; background-color: #F5F5F7; font-family: 'Plus Jakarta Sans', Arial, Helvetica, sans-serif; -webkit-font-smoothing: antialiased;">
+<body class="body"
+    style="margin: 0; padding: 0; background-color: #F5F5F7; background-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'1\' height=\'1\'><rect width=\'1\' height=\'1\' fill=\'%23F5F5F7\'/></svg>'); font-family: 'Plus Jakarta Sans', Arial, Helvetica, sans-serif; -webkit-font-smoothing: antialiased; color: #2C160B; -webkit-text-fill-color: #2C160B; text-shadow: 0 0 0 #2C160B;">
 
     <!-- Outer Wrapper Table -->
     <table border="0" cellpadding="0" cellspacing="0" width="100%"
-        style="border-collapse: collapse; background-color: #F5F5F7; table-layout: fixed;">
+        background="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1' height='1'><rect width='1' height='1' fill='%23F5F5F7'/></svg>"
+        style="border-collapse: collapse; background-color: #F5F5F7; background-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'1\' height=\'1\'><rect width=\'1\' height=\'1\' fill=\'%23F5F5F7\'/></svg>'); table-layout: fixed;">
         <tr>
-            <td align="center" class="outer-wrapper-td" style="padding: 24px 12px;">
+            <td align="center" class="outer-wrapper-td"
+                background="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1' height='1'><rect width='1' height='1' fill='%23F5F5F7'/></svg>"
+                style="padding: 24px 12px; background-color: #F5F5F7; background-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'1\' height=\'1\'><rect width=\'1\' height=\'1\' fill=\'%23F5F5F7\'/></svg>');">
 
-                <!-- Main Newsletter Card Container (620px Width) -->
-                <table border="0" cellpadding="0" cellspacing="0" width="620" class="newsletter-container"
+                <!-- Main Newsletter Card Container (620px Width, Center Aligned, Fixed Layout) -->
+                <table border="0" cellpadding="0" cellspacing="0" width="620" align="center" class="newsletter-container"
                     id="newsletter-app"
-                    style="border-collapse: collapse; width: 100%; max-width: 620px; background-color: #fff2e9; border-radius: 10px; border: 1px solid #EFE2D5; overflow: hidden; box-shadow: 0 16px 40px rgba(90, 40, 15, 0.09);">
+                    background="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1' height='1'><rect width='1' height='1' fill='%23fff2e9'/></svg>"
+                    style="border-collapse: collapse; width: 100%; max-width: 620px; margin: 0 auto; table-layout: fixed; background-color: #fff2e9; background-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'1\' height=\'1\'><rect width=\'1\' height=\'1\' fill=\'%23fff2e9\'/></svg>'); border-radius: 10px; border: 1px solid #EFE2D5; overflow: hidden; box-shadow: 0 16px 40px rgba(90, 40, 15, 0.09);">
 
                     <!-- Top Urgency Pill Badge Header Row -->
                     <tr>
-                        <td align="center" style="padding: 0; background-color: #fff2e9;">
+                        <td align="center" class="urgency-header-cell"
+                            background="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1' height='1'><rect width='1' height='1' fill='%23fff2e9'/></svg>"
+                            style="padding: 0; background-color: #fff2e9; background-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'1\' height=\'1\'><rect width=\'1\' height=\'1\' fill=\'%23fff2e9\'/></svg>');">
                             <table border="0" cellpadding="0" cellspacing="0" align="center" class="urgency-badge"
-                                style="border-collapse: collapse; background-color: #B83E12; border-radius: 0 0 18px 18px; box-shadow: 0 4px 12px rgba(184, 62, 18, 0.22);">
+                                background="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1' height='1'><rect width='1' height='1' fill='%23B83E12'/></svg>"
+                                style="border-collapse: collapse; background-color: #B83E12; background-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'1\' height=\'1\'><rect width=\'1\' height=\'1\' fill=\'%23B83E12\'/></svg>'); border-radius: 0 0 18px 18px; overflow: hidden; box-shadow: 0 4px 12px rgba(184, 62, 18, 0.22);">
                                 <tr>
                                     <td align="center" class="urgency-badge-cell"
-                                        style="padding: 7px 22px; color: #FFFFFF; font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 13.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; line-height: 1;">
+                                        background="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1' height='1'><rect width='1' height='1' fill='%23B83E12'/></svg>"
+                                        style="padding: 7px 22px; color: #FFFFFF; -webkit-text-fill-color: #FFFFFF; text-shadow: 0 0 0 #FFFFFF; font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 13.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; line-height: 1; background-color: #B83E12; background-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'1\' height=\'1\'><rect width=\'1\' height=\'1\' fill=\'%23B83E12\'/></svg>'); border-radius: 0 0 18px 18px;">
                                         <span style="display: inline-block; vertical-align: middle; margin-right: 6px;">
                                             <svg width="16" height="16" viewBox="0 0 24 24"
                                                 style="display: block; fill: #FFFFFF;">
@@ -350,90 +769,63 @@
                                                     d="M6 2v6h.01L10 12l-3.99 4H6v6h12v-6h-.01L14 12l3.99-4H18V2H6zm10 14.5V20H8v-3.5l4-4 4 4zM10 6L8 4h8l-2 2h-4z" />
                                             </svg>
                                         </span>
-                                        <span style="vertical-align: middle;">ONLY 13 DAYS LEFT</span>
+                                        <span
+                                            style="vertical-align: middle; color: #FFFFFF; -webkit-text-fill-color: #FFFFFF; text-shadow: 0 0 0 #FFFFFF;">ONLY
+                                            13 DAYS LEFT</span>
                                     </td>
                                 </tr>
                             </table>
                         </td>
                     </tr>
 
-                    <!-- Hero Section Table -->
+                    <!-- Hero Section Table (Clean Warm Peach Background, Wide Grand Layout) -->
                     <tr>
-                        <td align="center" style="padding: 0;">
-                            <table border="0" cellpadding="0" cellspacing="0" width="100%" class="hero-section"
-                                background="https://res.cloudinary.com/q5yzo8na/image/upload/w_600,h_270,c_fill,q_auto,f_auto/naga_dosha_high_resolution_2288x1032_nxpnqv.png"
-                                style="border-collapse: collapse; background-image: url('https://res.cloudinary.com/q5yzo8na/image/upload/w_600,h_270,c_fill,q_auto,f_auto/naga_dosha_high_resolution_2288x1032_nxpnqv.png'); background-position: 84% center; background-size: cover; background-repeat: no-repeat; width: 100%;">
+                        <td align="center" class="hero-section"
+                            background="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1' height='1'><rect width='1' height='1' fill='%23fff2e9'/></svg>"
+                            style="padding: 22px 16px 28px 16px; background-color: #fff2e9; background-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'1\' height=\'1\'><rect width=\'1\' height=\'1\' fill=\'%23fff2e9\'/></svg>'); text-align: center;">
+                            
+                            <table border="0" cellpadding="0" cellspacing="0" align="center" class="hero-text-content"
+                                style="border-collapse: collapse; max-width: 580px; width: 100%; margin: 0 auto; text-align: center;">
+                                <!-- Greeting -->
                                 <tr>
-                                    <td class="hero-cell" align="left"
-                                        style="padding: 30px 4% 20px 4%; vertical-align: middle;">
-                                        <table border="0" cellpadding="0" cellspacing="0" class="hero-text-content"
-                                            style="border-collapse: collapse; max-width: 320px; margin-left: 9%; margin-top: 24px; text-align: center;">
-                                            <!-- Greeting -->
+                                    <td align="center" style="padding-bottom: 4px;">
+                                        <p class="greeting-text"
+                                            style="font-family: 'DM Serif Display', Georgia, serif; font-size: 26px; font-weight: 400; color: #3A2014; -webkit-text-fill-color: #3A2014; text-shadow: 0 0 0 #3A2014; opacity: 0.99; margin: 0; line-height: 1.2; letter-spacing: 0.5px; text-align: center;">
+                                            Dear Ravi,</p>
+                                    </td>
+                                </tr>
+                                <!-- Main Heading -->
+                                <tr>
+                                    <td align="center">
+                                        <h1 class="main-heading"
+                                            style="font-family: 'DM Serif Display', Georgia, serif; font-size: 44px; font-weight: 400; color: #3A2014; -webkit-text-fill-color: #3A2014; text-shadow: 0 0 0 #3A2014; opacity: 0.99; line-height: 1.12; letter-spacing: 0.2px; margin: 0; text-align: center;">
+                                            Your Jupiter Reading</h1>
+                                    </td>
+                                </tr>
+                                <!-- Flourish Subheading -->
+                                <tr>
+                                    <td align="center" style="padding-top: 4px; padding-bottom: 8px;">
+                                        <table border="0" cellpadding="0" cellspacing="0" align="center"
+                                            class="flourish-subheading" style="border-collapse: collapse; margin: 0 auto; width: 100%; max-width: 440px; table-layout: fixed;">
                                             <tr>
-                                                <td align="center" style="padding-bottom: 2px;">
-                                                    <p class="greeting-text"
-                                                        style="font-family: 'DM Serif Display', Georgia, serif; font-size: 21px; font-weight: 400; color: #3A2014; margin: 0; line-height: 1.2;">
-                                                        Dear Ravi,</p>
-                                                </td>
-                                            </tr>
-                                            <!-- Main Heading -->
-                                            <tr>
-                                                <td align="center">
-                                                    <h1 class="main-heading"
-                                                        style="font-family: 'DM Serif Display', Georgia, serif; font-size: 32px; font-weight: 400; color: #3A2014; line-height: 1.12; letter-spacing: 0.1px; margin: 0;">
-                                                        Your Jupiter Reading</h1>
-                                                </td>
-                                            </tr>
-                                            <!-- Flourish Subheading -->
-                                            <tr>
-                                                <td align="center" style="padding-top: 2px; padding-bottom: 6px;">
-                                                    <table border="0" cellpadding="0" cellspacing="0" align="center"
-                                                        class="flourish-subheading" style="border-collapse: collapse;">
+                                                <td align="right" style="vertical-align: middle; padding-right: 4px;">
+                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;">
                                                         <tr>
-                                                            <td
-                                                                style="padding-right: 8px; vertical-align: middle; color: #B83E12; font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; letter-spacing: -1px;">
-                                                                <span style="color: #B83E12;">―</span><span
-                                                                    style="color: #D48928; margin-left: 2px;">✦</span>
-                                                            </td>
-                                                            <td style="vertical-align: middle;">
-                                                                <span class="ready-script"
-                                                                    style="font-family: 'Pinyon Script', cursive; font-size: 50px; font-weight: 400; color: #B83E12; line-height: 1; letter-spacing: 0.5px; white-space: nowrap;">is
-                                                                    Ready!</span>
-                                                            </td>
-                                                            <td
-                                                                style="padding-left: 8px; vertical-align: middle; color: #B83E12; font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; letter-spacing: -1px;">
-                                                                <span
-                                                                    style="color: #D48928; margin-right: 2px;">✦</span><span
-                                                                    style="color: #B83E12;">―</span>
-                                                            </td>
+                                                            <td style="border-top: 1.5px solid #ECC8B5; font-size: 1px; line-height: 1px; height: 1px;">&nbsp;</td>
+                                                            <td width="12" align="right" style="color: #D48928; -webkit-text-fill-color: #D48928; text-shadow: 0 0 0 #D48928; font-family: Arial, sans-serif; font-size: 13px; font-weight: bold; line-height: 1; padding-left: 3px;">✦</td>
                                                         </tr>
                                                     </table>
                                                 </td>
-                                            </tr>
-                                            <!-- Birthdate Subtext -->
-                                            <tr>
-                                                <td align="center" style="padding-bottom: 14px;">
-                                                    <p class="birthdate-subtext"
-                                                        style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 13.5px; color: #665043; font-weight: 500; margin: 0; line-height: 1.3;">
-                                                        Prepared from your birth date on file</p>
+                                                <td align="center" style="vertical-align: middle; padding: 0 6px; white-space: nowrap;">
+                                                    <span class="ready-script"
+                                                        style="font-family: 'Pinyon Script', cursive; font-size: 48px; font-weight: 400; color: #B83E12; -webkit-text-fill-color: #B83E12; text-shadow: 0 0 0 #B83E12; opacity: 0.99; line-height: 1; letter-spacing: 0.5px; white-space: nowrap;">is
+                                                        Ready!</span>
                                                 </td>
-                                            </tr>
-                                            <!-- Hero CTA Button -->
-                                            <tr>
-                                                <td align="center" class="hero-btn-cell">
-                                                    <table border="0" cellpadding="0" cellspacing="0" align="center"
-                                                        class="hero-btn-table" style="border-collapse: collapse;">
+                                                <td align="left" style="vertical-align: middle; padding-left: 4px;">
+                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;">
                                                         <tr>
-                                                            <td align="center" bgcolor="#B83E12"
-                                                                style="border-radius: 12px; background-color: #B83E12; box-shadow: 0 6px 16px rgba(184, 62, 18, 0.28);">
-                                                                <a href="#reading" class="hero-cta-btn"
-                                                                    id="hero-cta-button"
-                                                                    style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 15.5px; font-weight: 700; color: #FFFFFF; text-decoration: none; padding: 11px 26px; display: inline-block; border-radius: 12px; line-height: 1.2;">
-                                                                    <span>Open My Reading</span>
-                                                                    <span class="arrow"
-                                                                        style="display: inline-block; margin-left: 6px; font-family: Arial, sans-serif;">→</span>
-                                                                </a>
-                                                            </td>
+                                                            <td width="12" align="left" style="color: #D48928; -webkit-text-fill-color: #D48928; text-shadow: 0 0 0 #D48928; font-family: Arial, sans-serif; font-size: 13px; font-weight: bold; line-height: 1; padding-right: 3px;">✦</td>
+                                                            <td style="border-top: 1.5px solid #ECC8B5; font-size: 1px; line-height: 1px; height: 1px;">&nbsp;</td>
                                                         </tr>
                                                     </table>
                                                 </td>
@@ -441,19 +833,54 @@
                                         </table>
                                     </td>
                                 </tr>
+                                <!-- Birthdate Subtext -->
+                                <tr>
+                                    <td align="center" style="padding-bottom: 22px;">
+                                        <p class="birthdate-subtext"
+                                            style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 15.5px; color: #665043; -webkit-text-fill-color: #665043; text-shadow: 0 0 0 #665043; opacity: 0.99; font-weight: 500; margin: 0; line-height: 1.3; letter-spacing: 0.2px; text-align: center;">
+                                            Prepared from your birth date on file</p>
+                                    </td>
+                                </tr>
+                                <!-- Hero CTA Button -->
+                                <tr>
+                                    <td align="center" class="hero-btn-cell">
+                                        <table border="0" cellpadding="0" cellspacing="0" align="center"
+                                            class="hero-btn-table" style="border-collapse: collapse; margin: 0 auto;">
+                                            <tr>
+                                                <td align="center" bgcolor="#B83E12"
+                                                    background="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1' height='1'><rect width='1' height='1' fill='%23B83E12'/></svg>"
+                                                    style="border-radius: 12px; background-color: #B83E12; background-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'1\' height=\'1\'><rect width=\'1\' height=\'1\' fill=\'%23B83E12\'/></svg>'); box-shadow: 0 6px 16px rgba(184, 62, 18, 0.28);">
+                                                    <a href="#reading" class="hero-cta-btn"
+                                                        id="hero-cta-button"
+                                                        style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 17.5px; font-weight: 700; color: #FFFFFF; -webkit-text-fill-color: #FFFFFF; text-shadow: 0 0 0 #FFFFFF; text-decoration: none; padding: 14px 38px; display: inline-block; border-radius: 12px; line-height: 1.2; text-align: center;">
+                                                        <span>Open My Reading</span>
+                                                        <span class="arrow"
+                                                            style="display: inline-block; margin-left: 8px; font-family: Arial, sans-serif;">→</span>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
                             </table>
+
                         </td>
                     </tr>
 
                     <!-- Feature Section Wrapper Row -->
                     <tr>
-                        <td align="center" class="feature-card-wrapper" style="padding: 0 24px 20px 24px;">
+                        <td align="center" class="feature-card-wrapper"
+                            background="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1' height='1'><rect width='1' height='1' fill='%23fff2e9'/></svg>"
+                            style="padding: 0 16px 20px 16px; background-color: #fff2e9; background-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'1\' height=\'1\'><rect width=\'1\' height=\'1\' fill=\'%23fff2e9\'/></svg>');">
 
                             <!-- Main Feature List Card Table -->
                             <table border="0" cellpadding="0" cellspacing="0" width="100%" class="feature-card"
-                                style="border-collapse: collapse; background-color: #F9FAFC; border: 1px solid #F5E8DC; border-radius: 4px; box-shadow: 0 2px 8px rgba(184, 62, 18, 0.04);">
+                                background="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1' height='1'><rect width='1' height='1' fill='%23F9FAFC'/></svg>"
+                                style="border-collapse: collapse; background-color: #F9FAFC; background-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'1\' height=\'1\'><rect width=\'1\' height=\'1\' fill=\'%23F9FAFC\'/></svg>'); border: 1px solid #F5E8DC; border-radius: 4px; box-shadow: 0 2px 8px rgba(184, 62, 18, 0.04);">
                                 <tr>
-                                    <td class="feature-card-inner" style="padding: 26px 20px;">
+                                    <td class="feature-card-inner"
+                                        background="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1' height='1'><rect width='1' height='1' fill='%23F9FAFC'/></svg>"
+                                        style="padding: 16px 14px; background-color: #F9FAFC; background-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'1\' height=\'1\'><rect width=\'1\' height=\'1\' fill=\'%23F9FAFC\'/></svg>');">
 
                                         <!-- Feature Card Title -->
                                         <table border="0" cellpadding="0" cellspacing="0" width="100%"
@@ -461,9 +888,9 @@
                                             <tr>
                                                 <td align="center" style="padding-bottom: 20px;">
                                                     <h2 class="feature-title"
-                                                        style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 20px; font-weight: 700; color: #3A2014; text-align: center; margin: 0; line-height: 1.3;">
-                                                        3 things you will know in <span
-                                                            style="color: #B83E12; border-bottom: 2px solid #B83E12; padding-bottom: 1px;">5
+                                                        style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 20px; font-weight: 700; color: #3A2014; -webkit-text-fill-color: #3A2014; text-shadow: 0 0 0 #3A2014; opacity: 0.99; text-align: center; margin: 0; line-height: 1.3;">
+                                                        3 things you will know in <span class="feature-title-highlight"
+                                                            style="color: #B83E12; -webkit-text-fill-color: #B83E12; text-shadow: 0 0 0 #B83E12; border-bottom: 2px solid #B83E12; padding-bottom: 1px;">5
                                                             minutes:</span>
                                                     </h2>
                                                 </td>
@@ -479,12 +906,15 @@
                                                 <td style="padding-bottom: 12px;">
                                                     <table border="0" cellpadding="0" cellspacing="0" width="100%"
                                                         class="feature-item"
-                                                        style="border-collapse: collapse; background-color: #FFFFFF; border: 1px solid #F2E4D8; border-radius: 12px;">
+                                                        background="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1' height='1'><rect width='1' height='1' fill='%23FFFFFF'/></svg>"
+                                                        style="border-collapse: collapse; background-color: #FFFFFF; background-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'1\' height=\'1\'><rect width=\'1\' height=\'1\' fill=\'%23FFFFFF\'/></svg>'); border: 1px solid #F2E4D8; border-radius: 12px;">
                                                         <tr>
                                                             <td width="48"
                                                                 style="padding: 14px 0 14px 16px; vertical-align: middle;">
                                                                 <table border="0" cellpadding="0" cellspacing="0"
-                                                                    style="border-collapse: collapse; background-color: #FCECE1; border-radius: 50%; width: 48px; height: 48px;">
+                                                                    class="feature-icon-circle"
+                                                                    background="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='48' height='48'><circle cx='24' cy='24' r='24' fill='%23FCECE1'/></svg>"
+                                                                    style="border-collapse: collapse; background-color: #FCECE1; background-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'48\' height=\'48\'><circle cx=\'24\' cy=\'24\' r=\'24\' fill=\'%23FCECE1\'/></svg>'); border-radius: 50%; width: 48px; height: 48px;">
                                                                     <tr>
                                                                         <td align="center" valign="middle"
                                                                             class="feature-icon-box"
@@ -499,10 +929,10 @@
                                                             <td class="feature-text-group"
                                                                 style="padding: 14px 16px; vertical-align: middle;">
                                                                 <h3 class="feature-item-heading"
-                                                                    style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 15.5px; font-weight: 700; color: #2C160B; margin: 0 0 2px 0; line-height: 1.25;">
+                                                                    style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 15.5px; font-weight: 700; color: #2C160B; -webkit-text-fill-color: #2C160B; text-shadow: 0 0 0 #2C160B; opacity: 0.99; margin: 0 0 2px 0; line-height: 1.25;">
                                                                     Which months are best for you</h3>
                                                                 <p class="feature-item-desc"
-                                                                    style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 13.5px; color: #665043; margin: 0; line-height: 1.3;">
+                                                                    style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 13.5px; color: #665043; -webkit-text-fill-color: #665043; text-shadow: 0 0 0 #665043; opacity: 0.99; margin: 0; line-height: 1.3;">
                                                                     Major decisions, career moves, financial planning
                                                                 </p>
                                                             </td>
@@ -516,12 +946,15 @@
                                                 <td style="padding-bottom: 12px;">
                                                     <table border="0" cellpadding="0" cellspacing="0" width="100%"
                                                         class="feature-item"
-                                                        style="border-collapse: collapse; background-color: #FFFFFF; border: 1px solid #F2E4D8; border-radius: 12px;">
+                                                        background="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1' height='1'><rect width='1' height='1' fill='%23FFFFFF'/></svg>"
+                                                        style="border-collapse: collapse; background-color: #FFFFFF; background-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'1\' height=\'1\'><rect width=\'1\' height=\'1\' fill=\'%23FFFFFF\'/></svg>'); border: 1px solid #F2E4D8; border-radius: 12px;">
                                                         <tr>
                                                             <td width="48"
                                                                 style="padding: 14px 0 14px 16px; vertical-align: middle;">
                                                                 <table border="0" cellpadding="0" cellspacing="0"
-                                                                    style="border-collapse: collapse; background-color: #FCECE1; border-radius: 50%; width: 48px; height: 48px;">
+                                                                    class="feature-icon-circle"
+                                                                    background="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='48' height='48'><circle cx='24' cy='24' r='24' fill='%23FCECE1'/></svg>"
+                                                                    style="border-collapse: collapse; background-color: #FCECE1; background-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'48\' height=\'48\'><circle cx=\'24\' cy=\'24\' r=\'24\' fill=\'%23FCECE1\'/></svg>'); border-radius: 50%; width: 48px; height: 48px;">
                                                                     <tr>
                                                                         <td align="center" valign="middle"
                                                                             class="feature-icon-box"
@@ -537,10 +970,10 @@
                                                             <td class="feature-text-group"
                                                                 style="padding: 14px 16px; vertical-align: middle;">
                                                                 <h3 class="feature-item-heading"
-                                                                    style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 15.5px; font-weight: 700; color: #2C160B; margin: 0 0 2px 0; line-height: 1.25;">
+                                                                    style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 15.5px; font-weight: 700; color: #2C160B; -webkit-text-fill-color: #2C160B; text-shadow: 0 0 0 #2C160B; opacity: 0.99; margin: 0 0 2px 0; line-height: 1.25;">
                                                                     Which dates need extra caution</h3>
                                                                 <p class="feature-item-desc"
-                                                                    style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 13.5px; color: #665043; margin: 0; line-height: 1.3;">
+                                                                    style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 13.5px; color: #665043; -webkit-text-fill-color: #665043; text-shadow: 0 0 0 #665043; opacity: 0.99; margin: 0; line-height: 1.3;">
                                                                     Sensitive periods to plan around</p>
                                                             </td>
                                                         </tr>
@@ -553,12 +986,15 @@
                                                 <td style="padding-bottom: 4px;">
                                                     <table border="0" cellpadding="0" cellspacing="0" width="100%"
                                                         class="feature-item"
-                                                        style="border-collapse: collapse; background-color: #FFFFFF; border: 1px solid #F2E4D8; border-radius: 12px;">
+                                                        background="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1' height='1'><rect width='1' height='1' fill='%23FFFFFF'/></svg>"
+                                                        style="border-collapse: collapse; background-color: #FFFFFF; background-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'1\' height=\'1\'><rect width=\'1\' height=\'1\' fill=\'%23FFFFFF\'/></svg>'); border: 1px solid #F2E4D8; border-radius: 12px;">
                                                         <tr>
                                                             <td width="48"
                                                                 style="padding: 14px 0 14px 16px; vertical-align: middle;">
                                                                 <table border="0" cellpadding="0" cellspacing="0"
-                                                                    style="border-collapse: collapse; background-color: #FCECE1; border-radius: 50%; width: 48px; height: 48px;">
+                                                                    class="feature-icon-circle"
+                                                                    background="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='48' height='48'><circle cx='24' cy='24' r='24' fill='%23FCECE1'/></svg>"
+                                                                    style="border-collapse: collapse; background-color: #FCECE1; background-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'48\' height=\'48\'><circle cx=\'24\' cy=\'24\' r=\'24\' fill=\'%23FCECE1\'/></svg>'); border-radius: 50%; width: 48px; height: 48px;">
                                                                     <tr>
                                                                         <td align="center" valign="middle"
                                                                             class="feature-icon-box"
@@ -573,10 +1009,10 @@
                                                             <td class="feature-text-group"
                                                                 style="padding: 14px 16px; vertical-align: middle;">
                                                                 <h3 class="feature-item-heading"
-                                                                    style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 15.5px; font-weight: 700; color: #2C160B; margin: 0 0 2px 0; line-height: 1.25;">
+                                                                    style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 15.5px; font-weight: 700; color: #2C160B; -webkit-text-fill-color: #2C160B; text-shadow: 0 0 0 #2C160B; opacity: 0.99; margin: 0 0 2px 0; line-height: 1.25;">
                                                                     Personal remedies for your chart</h3>
                                                                 <p class="feature-item-desc"
-                                                                    style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 13.5px; color: #665043; margin: 0; line-height: 1.3;">
+                                                                    style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 13.5px; color: #665043; -webkit-text-fill-color: #665043; text-shadow: 0 0 0 #665043; opacity: 0.99; margin: 0; line-height: 1.3;">
                                                                     Puja, gemstones, precautions specific to you</p>
                                                             </td>
                                                         </tr>
@@ -602,24 +1038,26 @@
                                                     style="padding: 12px 16px 12px 8px; text-align: center; vertical-align: middle;">
                                                     <div class="unlock-title-row" style="margin-bottom: 2px;">
                                                         <span class="unlock-title-text"
-                                                            style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 13px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; color: #FFFFFF;">UNLOCK
+                                                            style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 13px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; color: #FFFFFF; -webkit-text-fill-color: #FFFFFF; text-shadow: 0 0 0 #FFFFFF;">UNLOCK
                                                             YOUR READING</span>
                                                     </div>
                                                     <p class="unlock-subtext"
-                                                        style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 13.5px; line-height: 1.25; color: #FFFFFF; margin: 0 0 6px 0;">
+                                                        style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 13.5px; line-height: 1.25; color: #FFFFFF; -webkit-text-fill-color: #FFFFFF; text-shadow: 0 0 0 #FFFFFF; margin: 0 0 6px 0;">
                                                         After 12 years, Jupiter is changing position — on <strong
                                                             class="unlock-date-highlight"
-                                                            style="color: #FFFFFF; font-weight: 700;">2 June
+                                                            style="color: #FFFFFF; -webkit-text-fill-color: #FFFFFF; text-shadow: 0 0 0 #FFFFFF; font-weight: 700;">2
+                                                            June
                                                             2026.</strong>
                                                     </p>
                                                     <table border="0" cellpadding="0" cellspacing="0" align="center"
                                                         class="unlock-btn-row" style="border-collapse: collapse;">
                                                         <tr>
                                                             <td align="center" bgcolor="#FFFFFF"
-                                                                style="border-radius: 6px; background-color: #FFFFFF;">
+                                                                background="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1' height='1'><rect width='1' height='1' fill='%23FFFFFF'/></svg>"
+                                                                style="border-radius: 6px; background-color: #FFFFFF; background-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'1\' height=\'1\'><rect width=\'1\' height=\'1\' fill=\'%23FFFFFF\'/></svg>');">
                                                                 <a href="#unlock" class="gold-compact-btn"
                                                                     id="unlock-reading-btn"
-                                                                    style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 13.5px; font-weight: 700; color: #B83E12; text-decoration: none; padding: 6px 18px; display: inline-block; border-radius: 6px; line-height: 1.2;">
+                                                                    style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 13.5px; font-weight: 700; color: #B83E12; -webkit-text-fill-color: #B83E12; text-shadow: 0 0 0 #B83E12; text-decoration: none; padding: 6px 18px; display: inline-block; border-radius: 6px; line-height: 1.2; white-space: nowrap;">
                                                                     <span>Unlock Reading</span>
                                                                     <span class="arrow"
                                                                         style="display: inline-block; margin-left: 4px; font-family: Arial, sans-serif;">→</span>
@@ -640,7 +1078,9 @@
 
                     <!-- Discount Offer & Primary Action Section Row -->
                     <tr>
-                        <td align="center" style="padding: 0 24px 24px 24px;">
+                        <td align="center" class="offer-section-cell"
+                            background="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1' height='1'><rect width='1' height='1' fill='%23fff2e9'/></svg>"
+                            style="padding: 0 16px 20px 16px; background-color: #fff2e9; background-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'1\' height=\'1\'><rect width=\'1\' height=\'1\' fill=\'%23fff2e9\'/></svg>');">
 
                             <table border="0" cellpadding="0" cellspacing="0" width="100%" class="offer-section"
                                 style="border-collapse: collapse;">
@@ -650,20 +1090,24 @@
                                         <!-- Framed Offer Card -->
                                         <table border="0" cellpadding="0" cellspacing="0" width="100%"
                                             class="offer-card-frame"
-                                            style="border-collapse: collapse; background-color: #F9FAFC; border: 1.5px solid #F0D5C5; border-radius: 10px; text-align: center; position: relative;">
+                                            background="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1' height='1'><rect width='1' height='1' fill='%23F9FAFC'/></svg>"
+                                            style="border-collapse: collapse; background-color: #F9FAFC; background-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'1\' height=\'1\'><rect width=\'1\' height=\'1\' fill=\'%23F9FAFC\'/></svg>'); border: 1.5px solid #F0D5C5; border-radius: 10px; text-align: center; position: relative;">
 
                                             <!-- Promo Pill Badge Row -->
                                             <tr>
                                                 <td align="center" style="padding-top: 16px; padding-bottom: 4px;">
                                                     <table border="0" cellpadding="0" cellspacing="0" align="center"
                                                         class="promo-pill"
-                                                        style="border-collapse: collapse; background-color: #FFFFFF; border: 1.5px solid #F0D5C5; border-radius: 30px;">
+                                                        background="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1' height='1'><rect width='1' height='1' fill='%23FFFFFF'/></svg>"
+                                                        style="border-collapse: collapse; background-color: #FFFFFF; background-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'1\' height=\'1\'><rect width=\'1\' height=\'1\' fill=\'%23FFFFFF\'/></svg>'); border: 1.5px solid #F0D5C5; border-radius: 30px;">
                                                         <tr>
                                                             <td class="promo-pill-cell"
-                                                                style="padding: 5px 20px; color: #B83E12; font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-weight: 700; font-size: 13.5px; white-space: nowrap; line-height: 1.2;">
+                                                                style="padding: 5px 20px; color: #B83E12; -webkit-text-fill-color: #B83E12; text-shadow: 0 0 0 #B83E12; font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-weight: 700; font-size: 13.5px; white-space: nowrap; line-height: 1.2;">
                                                                 <span class="arrow-icon"
-                                                                    style="font-size: 14px; font-weight: 800; color: #D48928; margin-right: 6px;">»</span>
-                                                                <span>FLAT 25% OFF Today Only!</span>
+                                                                    style="font-size: 14px; font-weight: 800; color: #D48928; -webkit-text-fill-color: #D48928; text-shadow: 0 0 0 #D48928; margin-right: 6px;">»</span>
+                                                                <span
+                                                                    style="color: #B83E12; -webkit-text-fill-color: #B83E12; text-shadow: 0 0 0 #B83E12;">FLAT
+                                                                    25% OFF Today Only!</span>
                                                             </td>
                                                         </tr>
                                                     </table>
@@ -677,10 +1121,12 @@
                                                         style="border-collapse: collapse; width: 100%; max-width: 320px;">
                                                         <tr>
                                                             <td align="center" bgcolor="#B83E12"
-                                                                style="border-radius: 12px; background-color: #B83E12; box-shadow: 0 6px 16px rgba(184, 62, 18, 0.28);">
+                                                                class="main-action-btn-cell"
+                                                                background="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1' height='1'><rect width='1' height='1' fill='%23B83E12'/></svg>"
+                                                                style="border-radius: 12px; background-color: #B83E12; background-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'1\' height=\'1\'><rect width=\'1\' height=\'1\' fill=\'%23B83E12\'/></svg>'); box-shadow: 0 6px 16px rgba(184, 62, 18, 0.28);">
                                                                 <a href="#get-reading" class="main-action-btn"
                                                                     id="get-reading-btn"
-                                                                    style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 17px; font-weight: 700; color: #FFFFFF; text-decoration: none; padding: 14px 28px; display: block; border-radius: 12px; line-height: 1.2;">
+                                                                    style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 17px; font-weight: 700; color: #FFFFFF; -webkit-text-fill-color: #FFFFFF; text-shadow: 0 0 0 #FFFFFF; text-decoration: none; padding: 14px 28px; display: block; border-radius: 12px; line-height: 1.2;">
                                                                     <span>Get My Reading Now</span>
                                                                     <span
                                                                         style="display: inline-block; margin-left: 6px; font-family: Arial, sans-serif;">→</span>
@@ -693,28 +1139,29 @@
 
                                             <!-- Guarantee Badges Bar Row -->
                                             <tr>
-                                                <td align="center" style="padding: 0 20px 18px 20px;">
+                                                <td align="center" style="padding: 0 4px 18px 4px;">
                                                     <table border="0" cellpadding="0" cellspacing="0" align="center"
                                                         class="guarantee-badges-bar" style="border-collapse: collapse;">
                                                         <tr>
-                                                            <td align="center"
-                                                                style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 13px; color: #665043; line-height: 1.3;">
+                                                            <td align="center" class="guarantee-badges-cell"
+                                                                style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 11.5px; color: #665043; -webkit-text-fill-color: #665043; text-shadow: 0 0 0 #665043; opacity: 0.99; line-height: 1.3; white-space: nowrap;">
                                                                 <span class="badge-item"
-                                                                    style="display: inline-block; vertical-align: middle;">
-                                                                    <svg width="15" height="15" viewBox="0 0 24 24"
-                                                                        style="display: inline-block; vertical-align: middle; stroke: #665043; fill: none; stroke-width: 2; margin-right: 4px;">
+                                                                    style="display: inline; vertical-align: middle; color: #665043; -webkit-text-fill-color: #665043; text-shadow: 0 0 0 #665043; white-space: nowrap;">
+                                                                    <svg width="13" height="13" viewBox="0 0 24 24"
+                                                                        style="display: inline-block; vertical-align: -2px; stroke: #665043; fill: none; stroke-width: 2; margin-right: 3px;">
                                                                         <circle cx="12" cy="12" r="9"></circle>
                                                                         <polyline points="12 7 12 12 15 15"></polyline>
                                                                     </svg>
-                                                                    <span style="vertical-align: middle;">Delivered in
-                                                                        72 hours</span>
+                                                                    <span
+                                                                        style="vertical-align: middle; color: #665043; -webkit-text-fill-color: #665043; text-shadow: 0 0 0 #665043; white-space: nowrap;">Delivered
+                                                                        in 72 hours</span>
                                                                 </span>
                                                                 <span class="badge-divider"
-                                                                    style="display: inline-block; margin: 0 8px; color: #8A7264; opacity: 0.6;">•</span>
+                                                                    style="display: inline; margin: 0 4px; color: #8A7264; -webkit-text-fill-color: #8A7264; text-shadow: 0 0 0 #8A7264; opacity: 0.6; white-space: nowrap;">•</span>
                                                                 <span class="badge-item"
-                                                                    style="display: inline-block; vertical-align: middle;">
-                                                                    <svg width="15" height="15" viewBox="0 0 24 24"
-                                                                        style="display: inline-block; vertical-align: middle; stroke: #665043; fill: none; stroke-width: 2; margin-right: 4px;">
+                                                                    style="display: inline; vertical-align: middle; color: #665043; -webkit-text-fill-color: #665043; text-shadow: 0 0 0 #665043; white-space: nowrap;">
+                                                                    <svg width="13" height="13" viewBox="0 0 24 24"
+                                                                        style="display: inline-block; vertical-align: -2px; stroke: #665043; fill: none; stroke-width: 2; margin-right: 3px;">
                                                                         <path
                                                                             d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z">
                                                                         </path>
@@ -723,8 +1170,9 @@
                                                                         <line x1="16" y1="17" x2="8" y2="17"></line>
                                                                         <polyline points="10 9 9 9 8 9"></polyline>
                                                                     </svg>
-                                                                    <span style="vertical-align: middle;">PDF on
-                                                                        email</span>
+                                                                    <span
+                                                                        style="vertical-align: middle; color: #665043; -webkit-text-fill-color: #665043; text-shadow: 0 0 0 #665043; white-space: nowrap;">PDF
+                                                                        on email</span>
                                                                 </span>
                                                             </td>
                                                         </tr>
@@ -742,13 +1190,16 @@
                                         <table border="0" cellpadding="0" cellspacing="0" width="100%" class="ps-box"
                                             style="border-collapse: collapse;">
                                             <tr>
-                                                <td align="center"
-                                                    style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 13.5px; color: #2C160B; line-height: 1.5; text-align: center;">
-                                                    <p style="margin: 0;">
-                                                        <strong>P.S.</strong> Only 10 days left before Jupiter changes
+                                                <td align="center" class="ps-box-cell"
+                                                    style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 13.5px; color: #2C160B; -webkit-text-fill-color: #2C160B; text-shadow: 0 0 0 #2C160B; opacity: 0.99; line-height: 1.5; text-align: center;">
+                                                    <p
+                                                        style="margin: 0; color: #2C160B; -webkit-text-fill-color: #2C160B; text-shadow: 0 0 0 #2C160B;">
+                                                        <strong
+                                                            style="color: #2C160B; -webkit-text-fill-color: #2C160B; text-shadow: 0 0 0 #2C160B;">P.S.</strong>
+                                                        Only 10 days left before Jupiter changes
                                                         position.<br>
                                                         <a href="#open-here" id="ps-reading-link"
-                                                            style="color: #B83E12; font-weight: 700; text-decoration: underline;">Open
+                                                            style="color: #B83E12; -webkit-text-fill-color: #B83E12; text-shadow: 0 0 0 #B83E12; font-weight: 700; text-decoration: underline;">Open
                                                             your reading here</a>
                                                     </p>
                                                 </td>
@@ -765,20 +1216,25 @@
                     <!-- Footer Section Row -->
                     <tr>
                         <td align="center" class="newsletter-footer"
-                            style="padding: 18px 24px 24px 24px; border-top: 1px solid #E8DDD2; background-color: #fff2e9;">
+                            background="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1' height='1'><rect width='1' height='1' fill='%23fff2e9'/></svg>"
+                            style="padding: 18px 24px 24px 24px; border-top: 1px solid #E8DDD2; background-color: #fff2e9; background-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'1\' height=\'1\'><rect width=\'1\' height=\'1\' fill=\'%23fff2e9\'/></svg>');">
                             <table border="0" cellpadding="0" cellspacing="0" align="center" class="footer-nav"
                                 style="border-collapse: collapse;">
                                 <tr>
-                                    <td align="center"
-                                        style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 12px; color: #8A7264; text-align: center; line-height: 1.4;">
-                                        <span style="display: inline-block;">© 2026 Astroved.com</span>
+                                    <td align="center" class="footer-nav-cell"
+                                        style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 12px; color: #8A7264; -webkit-text-fill-color: #8A7264; text-shadow: 0 0 0 #8A7264; opacity: 0.99; text-align: center; line-height: 1.4;">
+                                        <span
+                                            style="display: inline-block; color: #8A7264; -webkit-text-fill-color: #8A7264; text-shadow: 0 0 0 #8A7264;">©
+                                            2026 Astroved.com</span>
                                         <span class="footer-divider"
-                                            style="display: inline-block; margin: 0 8px; opacity: 0.5;">|</span>
-                                        <span style="display: inline-block;">Astroved.com Pvt Ltd</span>
+                                            style="display: inline-block; margin: 0 8px; opacity: 0.5; color: #8A7264; -webkit-text-fill-color: #8A7264; text-shadow: 0 0 0 #8A7264;">|</span>
+                                        <span
+                                            style="display: inline-block; color: #8A7264; -webkit-text-fill-color: #8A7264; text-shadow: 0 0 0 #8A7264;">Astroved.com
+                                            Pvt Ltd</span>
                                         <span class="footer-divider"
-                                            style="display: inline-block; margin: 0 8px; opacity: 0.5;">|</span>
+                                            style="display: inline-block; margin: 0 8px; opacity: 0.5; color: #8A7264; -webkit-text-fill-color: #8A7264; text-shadow: 0 0 0 #8A7264;">|</span>
                                         <a href="#unsubscribe" class="underline" id="unsubscribe-link"
-                                            style="color: #8A7264; text-decoration: underline; display: inline-block;">Unsubscribe</a>
+                                            style="color: #8A7264; -webkit-text-fill-color: #8A7264; text-shadow: 0 0 0 #8A7264; text-decoration: underline; display: inline-block;">Unsubscribe</a>
                                     </td>
                                 </tr>
                             </table>
