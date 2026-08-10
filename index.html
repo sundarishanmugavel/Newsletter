@@ -110,14 +110,14 @@
             }
 
             .hero-text-content {
-                margin-left: 28px !important;
-                max-width: 56% !important;
+                margin-left: 42px !important;
+                max-width: 50% !important;
                 margin-top: 0 !important;
                 text-align: center !important;
             }
 
             .greeting-text {
-                font-size: 16px !important;
+                font-size: 15px !important;
                 font-weight: 700 !important;
                 color: #3A2014 !important;
                 font-family: 'DM Serif Display', Georgia, 'Times New Roman', serif !important;
@@ -125,7 +125,7 @@
             }
 
             .main-heading {
-                font-size: 15.5px !important;
+                font-size: 14.5px !important;
                 line-height: 1.15 !important;
                 color: #3A2014 !important;
                 font-family: 'DM Serif Display', Georgia, 'Times New Roman', serif !important;
@@ -134,13 +134,13 @@
             }
 
             .ready-script {
-                font-size: 28px !important;
+                font-size: 26px !important;
                 color: #B83E12 !important;
                 font-family: 'Pinyon Script', Georgia, 'Times New Roman', cursive !important;
             }
 
             .birthdate-subtext {
-                font-size: 10px !important;
+                font-size: 9.5px !important;
                 color: #5C4334 !important;
                 font-family: 'Plus Jakarta Sans', Arial, sans-serif !important;
                 margin-bottom: 2px !important;
@@ -148,7 +148,7 @@
             }
 
             .hero-btn-table {
-                margin-left: 16px !important;
+                margin-left: 18px !important;
                 margin-top: -6px !important;
             }
 
@@ -218,14 +218,27 @@
             }
         }
 
-        /* Narrow Mobile Screen Overrides (320px Viewports) */
-        @media screen and (max-width: 380px) {
+        /* Medium Mobile Screen Overrides (400px - 540px Viewports, e.g. 425px) */
+        @media screen and (min-width: 400px) and (max-width: 540px) {
+            .hero-text-content {
+                margin-left: 62px !important;
+                max-width: 52% !important;
+            }
+
+            .hero-btn-table {
+                margin-left: 32px !important;
+            }
+        }
+
+        /* Narrow Mobile Screen Overrides (320px Viewports Only) */
+        @media screen and (max-width: 340px) {
             .hero-cell {
                 padding-top: 12px !important;
+                padding-left: 6px !important;
             }
 
             .hero-text-content {
-                margin-left: 6px !important;
+                margin-left: 32px !important;
                 max-width: 54% !important;
                 margin-top: -4px !important;
             }
@@ -236,13 +249,14 @@
             }
 
             .hero-btn-table {
-                margin-left: 0 !important;
+                margin-left: 16px !important;
                 margin-top: -6px !important;
             }
         }
 
         /* Dark Mode Color Scheme & Text Visibility Overrides */
         @media (prefers-color-scheme: dark) {
+
             /* 1. Only 13 Days Left Badge - 100% width in dark mode */
             .urgency-badge {
                 width: 100% !important;
@@ -370,27 +384,32 @@
                                                         Your Jupiter Reading</h1>
                                                 </td>
                                             </tr>
-                                             <!-- Flourish Subheading -->
-                                             <tr>
-                                                 <td align="center" style="padding-top: 2px; padding-bottom: 6px;">
-                                                     <table border="0" cellpadding="0" cellspacing="0" align="center"
-                                                         class="flourish-subheading" style="border-collapse: collapse;">
-                                                         <tr>
-                                                             <td style="padding-right: 8px; vertical-align: middle; color: #B83E12; font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; letter-spacing: -1px;">
-                                                                 <span style="color: #B83E12;">―</span><span style="color: #D48928; margin-left: 2px;">✦</span>
-                                                             </td>
-                                                             <td style="vertical-align: middle;">
-                                                                 <span class="ready-script"
-                                                                     style="font-family: 'Pinyon Script', cursive; font-size: 50px; font-weight: 400; color: #B83E12; line-height: 1; letter-spacing: 0.5px; white-space: nowrap;">is
-                                                                     Ready!</span>
-                                                             </td>
-                                                             <td style="padding-left: 8px; vertical-align: middle; color: #B83E12; font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; letter-spacing: -1px;">
-                                                                 <span style="color: #D48928; margin-right: 2px;">✦</span><span style="color: #B83E12;">―</span>
-                                                             </td>
-                                                         </tr>
-                                                     </table>
-                                                 </td>
-                                             </tr>
+                                            <!-- Flourish Subheading -->
+                                            <tr>
+                                                <td align="center" style="padding-top: 2px; padding-bottom: 6px;">
+                                                    <table border="0" cellpadding="0" cellspacing="0" align="center"
+                                                        class="flourish-subheading" style="border-collapse: collapse;">
+                                                        <tr>
+                                                            <td
+                                                                style="padding-right: 8px; vertical-align: middle; color: #B83E12; font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; letter-spacing: -1px;">
+                                                                <span style="color: #B83E12;">―</span><span
+                                                                    style="color: #D48928; margin-left: 2px;">✦</span>
+                                                            </td>
+                                                            <td style="vertical-align: middle;">
+                                                                <span class="ready-script"
+                                                                    style="font-family: 'Pinyon Script', cursive; font-size: 50px; font-weight: 400; color: #B83E12; line-height: 1; letter-spacing: 0.5px; white-space: nowrap;">is
+                                                                    Ready!</span>
+                                                            </td>
+                                                            <td
+                                                                style="padding-left: 8px; vertical-align: middle; color: #B83E12; font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; letter-spacing: -1px;">
+                                                                <span
+                                                                    style="color: #D48928; margin-right: 2px;">✦</span><span
+                                                                    style="color: #B83E12;">―</span>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
                                             <!-- Birthdate Subtext -->
                                             <tr>
                                                 <td align="center" style="padding-bottom: 14px;">
@@ -403,8 +422,7 @@
                                             <tr>
                                                 <td align="center" class="hero-btn-cell">
                                                     <table border="0" cellpadding="0" cellspacing="0" align="center"
-                                                        class="hero-btn-table"
-                                                        style="border-collapse: collapse;">
+                                                        class="hero-btn-table" style="border-collapse: collapse;">
                                                         <tr>
                                                             <td align="center" bgcolor="#B83E12"
                                                                 style="border-radius: 12px; background-color: #B83E12; box-shadow: 0 6px 16px rgba(184, 62, 18, 0.28);">
@@ -471,7 +489,9 @@
                                                                         <td align="center" valign="middle"
                                                                             class="feature-icon-box"
                                                                             style="width: 48px; height: 48px; text-align: center; vertical-align: middle;">
-                                                                            <img src="https://res.cloudinary.com/q5yzo8na/image/upload/q_auto,f_auto/icon_best_months_mdrazd.png" width="24" height="24" alt="Best months" style="display: block; width: 24px; height: 24px; margin: 0 auto; border: 0;" />
+                                                                            <img src="https://res.cloudinary.com/q5yzo8na/image/upload/q_auto,f_auto/icon_best_months_mdrazd.png"
+                                                                                width="24" height="24" alt="Best months"
+                                                                                style="display: block; width: 24px; height: 24px; margin: 0 auto; border: 0;" />
                                                                         </td>
                                                                     </tr>
                                                                 </table>
@@ -506,7 +526,10 @@
                                                                         <td align="center" valign="middle"
                                                                             class="feature-icon-box"
                                                                             style="width: 48px; height: 48px; text-align: center; vertical-align: middle;">
-                                                                            <img src="https://res.cloudinary.com/q5yzo8na/image/upload/q_auto,f_auto/icon_caution_dates_q692se.png" width="24" height="24" alt="Caution dates" style="display: block; width: 24px; height: 24px; margin: 0 auto; border: 0;" />
+                                                                            <img src="https://res.cloudinary.com/q5yzo8na/image/upload/q_auto,f_auto/icon_caution_dates_q692se.png"
+                                                                                width="24" height="24"
+                                                                                alt="Caution dates"
+                                                                                style="display: block; width: 24px; height: 24px; margin: 0 auto; border: 0;" />
                                                                         </td>
                                                                     </tr>
                                                                 </table>
@@ -540,7 +563,9 @@
                                                                         <td align="center" valign="middle"
                                                                             class="feature-icon-box"
                                                                             style="width: 48px; height: 48px; text-align: center; vertical-align: middle;">
-                                                                            <img src="https://res.cloudinary.com/q5yzo8na/image/upload/q_auto,f_auto/icon_remedies_aajl98.png" width="24" height="24" alt="Remedies" style="display: block; width: 24px; height: 24px; margin: 0 auto; border: 0;" />
+                                                                            <img src="https://res.cloudinary.com/q5yzo8na/image/upload/q_auto,f_auto/icon_remedies_aajl98.png"
+                                                                                width="24" height="24" alt="Remedies"
+                                                                                style="display: block; width: 24px; height: 24px; margin: 0 auto; border: 0;" />
                                                                         </td>
                                                                     </tr>
                                                                 </table>
@@ -568,20 +593,20 @@
                                                 <!-- Left: Vertically Centered Timer Image -->
                                                 <td width="100" align="center" class="unlock-left-timer"
                                                     style="padding: 12px 0 12px 16px; vertical-align: middle;">
-                                                     <img src="https://res.cloudinary.com/q5yzo8na/image/upload/q_auto,f_auto/image_copy_vuooms.png" alt="Timer"
-                                                         class="timer-left-image" width="95"
-                                                         style="display: block; width: 95px; height: auto; border: 0;" />
+                                                    <img src="https://res.cloudinary.com/q5yzo8na/image/upload/q_auto,f_auto/image_copy_vuooms.png"
+                                                        alt="Timer" class="timer-left-image" width="95"
+                                                        style="display: block; width: 95px; height: auto; border: 0;" />
                                                 </td>
                                                 <!-- Right: Center Body Content Stack -->
                                                 <td class="unlock-body-content"
                                                     style="padding: 12px 16px 12px 8px; text-align: center; vertical-align: middle;">
                                                     <div class="unlock-title-row" style="margin-bottom: 2px;">
                                                         <span class="unlock-title-text"
-                                                            style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 13px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; color: #FFE6DA;">UNLOCK
+                                                            style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 13px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; color: #FFFFFF;">UNLOCK
                                                             YOUR READING</span>
                                                     </div>
                                                     <p class="unlock-subtext"
-                                                        style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 13.5px; line-height: 1.25; color: #FFE6DA; margin: 0 0 6px 0;">
+                                                        style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 13.5px; line-height: 1.25; color: #FFFFFF; margin: 0 0 6px 0;">
                                                         After 12 years, Jupiter is changing position — on <strong
                                                             class="unlock-date-highlight"
                                                             style="color: #FFFFFF; font-weight: 700;">2 June
