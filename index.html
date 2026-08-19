@@ -255,6 +255,7 @@
 
             .unlock-title-text {
                 font-size: 11px !important;
+                padding: 3px 10px !important;
                 white-space: normal !important;
                 word-break: break-word !important;
             }
@@ -462,7 +463,14 @@
                 color-scheme: light !important;
             }
 
-            .unlock-title-text,
+            .unlock-title-text {
+                background-color: #FFE566 !important;
+                background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1" height="1"><rect width="1" height="1" fill="%23FFE566"/></svg>') !important;
+                color: #3A2014 !important;
+                -webkit-text-fill-color: #3A2014 !important;
+                border-color: #FFD036 !important;
+            }
+
             .unlock-subtext,
             .unlock-date-highlight {
                 color: #FFFFFF !important;
@@ -638,7 +646,12 @@
             background-image: linear-gradient(135deg, #B83E12 0%, #8C2A06 100%) !important;
         }
 
-        [data-ogsc] .unlock-title-text,
+        [data-ogsc] .unlock-title-text {
+            background-color: #FFE566 !important;
+            color: #3A2014 !important;
+            -webkit-text-fill-color: #3A2014 !important;
+        }
+
         [data-ogsc] .unlock-subtext,
         [data-ogsc] .unlock-date-highlight {
             color: #FFFFFF !important;
@@ -682,90 +695,98 @@
         /* ----------------------------------------------------
            GMAIL ANDROID UNTOUCHABLE CLASS PRESERVATION HACKS
            ---------------------------------------------------- */
-        u + .body .newsletter-container,
-        div > u + .body .newsletter-container,
-        u + .body .urgency-header-cell,
-        div > u + .body .urgency-header-cell,
-        u + .body .hero-section,
-        div > u + .body .hero-section,
-        u + .body .feature-card-wrapper,
-        div > u + .body .feature-card-wrapper,
-        u + .body .offer-section-cell,
-        div > u + .body .offer-section-cell,
-        u + .body .newsletter-footer,
-        div > u + .body .newsletter-footer {
+        u+.body .newsletter-container,
+        div>u+.body .newsletter-container,
+        u+.body .urgency-header-cell,
+        div>u+.body .urgency-header-cell,
+        u+.body .hero-section,
+        div>u+.body .hero-section,
+        u+.body .feature-card-wrapper,
+        div>u+.body .feature-card-wrapper,
+        u+.body .offer-section-cell,
+        div>u+.body .offer-section-cell,
+        u+.body .newsletter-footer,
+        div>u+.body .newsletter-footer {
             background-color: #fff2e9 !important;
             background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1" height="1"><rect width="1" height="1" fill="%23fff2e9"/></svg>') !important;
         }
 
-        u + .body .feature-card,
-        div > u + .body .feature-card,
-        u + .body .offer-card-frame,
-        div > u + .body .offer-card-frame {
+        u+.body .feature-card,
+        div>u+.body .feature-card,
+        u+.body .offer-card-frame,
+        div>u+.body .offer-card-frame {
             background-color: #F9FAFC !important;
             background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1" height="1"><rect width="1" height="1" fill="%23F9FAFC"/></svg>') !important;
         }
 
-        u + .body .feature-item,
-        div > u + .body .feature-item,
-        u + .body .promo-pill,
-        div > u + .body .promo-pill,
-        u + .body .gold-compact-btn,
-        div > u + .body .gold-compact-btn {
+        u+.body .feature-item,
+        div>u+.body .feature-item,
+        u+.body .promo-pill,
+        div>u+.body .promo-pill,
+        u+.body .gold-compact-btn,
+        div>u+.body .gold-compact-btn {
             background-color: #FFFFFF !important;
             background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1" height="1"><rect width="1" height="1" fill="%23FFFFFF"/></svg>') !important;
         }
 
-        u + .body .feature-icon-circle,
-        div > u + .body .feature-icon-circle {
+        u+.body .feature-icon-circle,
+        div>u+.body .feature-icon-circle {
             background-color: #FCECE1 !important;
             background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><circle cx="24" cy="24" r="24" fill="%23FCECE1"/></svg>') !important;
         }
 
-        u + .body .greeting-text,
-        div > u + .body .greeting-text,
-        u + .body .main-heading,
-        div > u + .body .main-heading,
-        u + .body .feature-title,
-        div > u + .body .feature-title {
+        u+.body .greeting-text,
+        div>u+.body .greeting-text,
+        u+.body .main-heading,
+        div>u+.body .main-heading,
+        u+.body .feature-title,
+        div>u+.body .feature-title {
             color: #3A2014 !important;
             -webkit-text-fill-color: #3A2014 !important;
         }
 
-        u + .body .ready-script,
-        div > u + .body .ready-script,
-        u + .body .feature-title-highlight,
-        div > u + .body .feature-title-highlight,
-        u + .body .promo-pill-cell,
-        div > u + .body .promo-pill-cell,
-        u + .body #ps-reading-link,
-        div > u + .body #ps-reading-link {
+        u+.body .ready-script,
+        div>u+.body .ready-script,
+        u+.body .feature-title-highlight,
+        div>u+.body .feature-title-highlight,
+        u+.body .promo-pill-cell,
+        div>u+.body .promo-pill-cell,
+        u+.body #ps-reading-link,
+        div>u+.body #ps-reading-link {
             color: #B83E12 !important;
             -webkit-text-fill-color: #B83E12 !important;
         }
 
-        u + .body .feature-item-heading,
-        div > u + .body .feature-item-heading,
-        u + .body .ps-box-cell,
-        div > u + .body .ps-box-cell {
+        u+.body .unlock-title-text,
+        div>u+.body .unlock-title-text {
+            background-color: #FFE566 !important;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1" height="1"><rect width="1" height="1" fill="%23FFE566"/></svg>') !important;
+            color: #3A2014 !important;
+            -webkit-text-fill-color: #3A2014 !important;
+        }
+
+        u+.body .feature-item-heading,
+        div>u+.body .feature-item-heading,
+        u+.body .ps-box-cell,
+        div>u+.body .ps-box-cell {
             color: #2C160B !important;
             -webkit-text-fill-color: #2C160B !important;
         }
 
-        u + .body .birthdate-subtext,
-        div > u + .body .birthdate-subtext,
-        u + .body .feature-item-desc,
-        div > u + .body .feature-item-desc,
-        u + .body .guarantee-badges-cell,
-        div > u + .body .guarantee-badges-cell {
+        u+.body .birthdate-subtext,
+        div>u+.body .birthdate-subtext,
+        u+.body .feature-item-desc,
+        div>u+.body .feature-item-desc,
+        u+.body .guarantee-badges-cell,
+        div>u+.body .guarantee-badges-cell {
             color: #665043 !important;
             -webkit-text-fill-color: #665043 !important;
         }
 
-        u + .body .footer-nav-cell,
-        div > u + .body .footer-nav-cell,
-        u + .body #unsubscribe-link,
-        div > u + .body #unsubscribe-link {
+        u+.body .footer-nav-cell,
+        div>u+.body .footer-nav-cell,
+        u+.body #unsubscribe-link,
+        div>u+.body #unsubscribe-link {
             color: #8A7264 !important;
             -webkit-text-fill-color: #8A7264 !important;
         }
@@ -785,8 +806,8 @@
                 style="padding: 24px 12px; background-color: #F5F5F7; background-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'1\' height=\'1\'><rect width=\'1\' height=\'1\' fill=\'%23F5F5F7\'/></svg>');">
 
                 <!-- Main Newsletter Card Container (620px Width, Center Aligned, Fixed Layout) -->
-                <table border="0" cellpadding="0" cellspacing="0" width="620" align="center" class="newsletter-container"
-                    id="newsletter-app"
+                <table border="0" cellpadding="0" cellspacing="0" width="620" align="center"
+                    class="newsletter-container" id="newsletter-app"
                     background="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1' height='1'><rect width='1' height='1' fill='%23fff2e9'/></svg>"
                     style="border-collapse: collapse; width: 100%; max-width: 620px; margin: 0 auto; table-layout: fixed; background-color: #fff2e9; background-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'1\' height=\'1\'><rect width=\'1\' height=\'1\' fill=\'%23fff2e9\'/></svg>'); border-radius: 10px; border: 1px solid #EFE2D5; overflow: hidden; box-shadow: 0 16px 40px rgba(90, 40, 15, 0.09);">
 
@@ -823,7 +844,7 @@
                         <td align="center" class="hero-section"
                             background="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1' height='1'><rect width='1' height='1' fill='%23fff2e9'/></svg>"
                             style="padding: 22px 16px 28px 16px; background-color: #fff2e9; background-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'1\' height=\'1\'><rect width=\'1\' height=\'1\' fill=\'%23fff2e9\'/></svg>'); text-align: center;">
-                            
+
                             <table border="0" cellpadding="0" cellspacing="0" align="center" class="hero-text-content"
                                 style="border-collapse: collapse; max-width: 580px; width: 100%; margin: 0 auto; text-align: center;">
                                 <!-- Greeting -->
@@ -846,29 +867,43 @@
                                 <tr>
                                     <td align="center" style="padding-top: 4px; padding-bottom: 8px;">
                                         <table border="0" cellpadding="0" cellspacing="0" align="center"
-                                            class="flourish-subheading" style="border-collapse: collapse; margin: 0 auto; width: 100%; max-width: 480px;">
+                                            class="flourish-subheading"
+                                            style="border-collapse: collapse; margin: 0 auto; width: 100%; max-width: 480px;">
                                             <tr>
                                                 <td align="right" style="vertical-align: middle; width: 22%;">
-                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;">
+                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%"
+                                                        style="border-collapse: collapse;">
                                                         <tr>
-                                                            <td valign="middle" style="vertical-align: middle; padding: 0;">
-                                                                <div style="height: 1.5px; background-color: #ECC8B5; font-size: 1px; line-height: 1px;">&nbsp;</div>
+                                                            <td valign="middle"
+                                                                style="vertical-align: middle; padding: 0;">
+                                                                <div
+                                                                    style="height: 1.5px; background-color: #ECC8B5; font-size: 1px; line-height: 1px;">
+                                                                    &nbsp;</div>
                                                             </td>
-                                                            <td width="16" align="right" valign="middle" style="vertical-align: middle; color: #D48928; -webkit-text-fill-color: #D48928; text-shadow: 0 0 0 #D48928; font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; line-height: 1; padding-left: 4px;">✦</td>
+                                                            <td width="16" align="right" valign="middle"
+                                                                style="vertical-align: middle; color: #D48928; -webkit-text-fill-color: #D48928; text-shadow: 0 0 0 #D48928; font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; line-height: 1; padding-left: 4px;">
+                                                                ✦</td>
                                                         </tr>
                                                     </table>
                                                 </td>
-                                                <td align="center" style="vertical-align: middle; padding: 0 16px; white-space: nowrap; width: 56%;">
+                                                <td align="center"
+                                                    style="vertical-align: middle; padding: 0 16px; white-space: nowrap; width: 56%;">
                                                     <span class="ready-script"
                                                         style="font-family: 'Pinyon Script', cursive; font-size: 46px; font-weight: 400; color: #B83E12; -webkit-text-fill-color: #B83E12; text-shadow: 0 0 0 #B83E12; opacity: 0.99; line-height: 1; letter-spacing: 0.5px; white-space: nowrap;">is
                                                         Ready!</span>
                                                 </td>
                                                 <td align="left" style="vertical-align: middle; width: 22%;">
-                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;">
+                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%"
+                                                        style="border-collapse: collapse;">
                                                         <tr>
-                                                            <td width="16" align="left" valign="middle" style="vertical-align: middle; color: #D48928; -webkit-text-fill-color: #D48928; text-shadow: 0 0 0 #D48928; font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; line-height: 1; padding-right: 4px;">✦</td>
-                                                            <td valign="middle" style="vertical-align: middle; padding: 0;">
-                                                                <div style="height: 1.5px; background-color: #ECC8B5; font-size: 1px; line-height: 1px;">&nbsp;</div>
+                                                            <td width="16" align="left" valign="middle"
+                                                                style="vertical-align: middle; color: #D48928; -webkit-text-fill-color: #D48928; text-shadow: 0 0 0 #D48928; font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; line-height: 1; padding-right: 4px;">
+                                                                ✦</td>
+                                                            <td valign="middle"
+                                                                style="vertical-align: middle; padding: 0;">
+                                                                <div
+                                                                    style="height: 1.5px; background-color: #ECC8B5; font-size: 1px; line-height: 1px;">
+                                                                    &nbsp;</div>
                                                             </td>
                                                         </tr>
                                                     </table>
@@ -894,8 +929,7 @@
                                                 <td align="center" bgcolor="#B83E12"
                                                     background="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1' height='1'><rect width='1' height='1' fill='%23B83E12'/></svg>"
                                                     style="border-radius: 12px; background-color: #B83E12; background-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'1\' height=\'1\'><rect width=\'1\' height=\'1\' fill=\'%23B83E12\'/></svg>'); box-shadow: 0 6px 16px rgba(184, 62, 18, 0.28);">
-                                                    <a href="#reading" class="hero-cta-btn"
-                                                        id="hero-cta-button"
+                                                    <a href="#reading" class="hero-cta-btn" id="hero-cta-button"
                                                         style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 17.5px; font-weight: 700; color: #FFFFFF; -webkit-text-fill-color: #FFFFFF; text-shadow: 0 0 0 #FFFFFF; text-decoration: none; padding: 14px 38px; display: inline-block; border-radius: 12px; line-height: 1.2; text-align: center;">
                                                         <span>Open My Reading</span>
                                                         <span class="arrow"
@@ -933,9 +967,8 @@
                                                 <td align="center" style="padding-bottom: 20px;">
                                                     <h2 class="feature-title"
                                                         style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 20px; font-weight: 700; color: #3A2014; -webkit-text-fill-color: #3A2014; text-shadow: 0 0 0 #3A2014; opacity: 0.99; text-align: center; margin: 0; line-height: 1.3; word-break: break-word;">
-                                                        3 things you will know in <span class="feature-title-highlight"
-                                                            style="color: #B83E12; -webkit-text-fill-color: #B83E12; text-shadow: 0 0 0 #B83E12; border-bottom: 2px solid #B83E12; padding-bottom: 1px; display: inline-block;">5
-                                                            minutes:</span>
+                                                        3 things you will know <span class="feature-title-highlight"
+                                                            style="color: #B83E12; -webkit-text-fill-color: #B83E12; text-shadow: 0 0 0 #B83E12; border-bottom: 2px solid #B83E12; padding-bottom: 1px; display: inline-block;">Instantly</span>
                                                     </h2>
                                                 </td>
                                             </tr>
@@ -943,7 +976,8 @@
 
                                         <!-- Feature List Items -->
                                         <table border="0" cellpadding="0" cellspacing="0" width="100%"
-                                            class="feature-list" style="table-layout: fixed; border-collapse: collapse;">
+                                            class="feature-list"
+                                            style="table-layout: fixed; border-collapse: collapse;">
 
                                             <!-- Feature Item 1 -->
                                             <tr>
@@ -1080,10 +1114,11 @@
                                                 <!-- Right: Center Body Content Stack -->
                                                 <td class="unlock-body-content"
                                                     style="padding: 12px 10px 12px 4px; text-align: center; vertical-align: middle; word-break: break-word;">
-                                                    <div class="unlock-title-row" style="margin-bottom: 2px;">
+                                                    <div class="unlock-title-row" style="margin-bottom: 6px;">
                                                         <span class="unlock-title-text"
-                                                            style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 13px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; color: #FFFFFF; -webkit-text-fill-color: #FFFFFF; text-shadow: 0 0 0 #FFFFFF;">UNLOCK
-                                                            YOUR READING</span>
+                                                            background="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1' height='1'><rect width='1' height='1' fill='%23FFE566'/></svg>"
+                                                            style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 12.5px; font-weight: 800; letter-spacing: 0.8px; text-transform: uppercase; color: #3A2014; -webkit-text-fill-color: #3A2014; text-shadow: 0 0 0 #3A2014; background-color: #FFE566; background-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'1\' height=\'1\'><rect width=\'1\' height=\'1\' fill=\'%23FFE566\'/></svg>'); padding: 4px 14px; border-radius: 20px; display: inline-block; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); border: 1px solid #FFD036;">✦ Big
+                                                            Changes Ahead For You ✦</span>
                                                     </div>
                                                     <p class="unlock-subtext"
                                                         style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 13.5px; line-height: 1.25; color: #FFFFFF; -webkit-text-fill-color: #FFFFFF; text-shadow: 0 0 0 #FFFFFF; margin: 0 0 6px 0;">
